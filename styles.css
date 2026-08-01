@@ -260,7 +260,9 @@ p {
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
-  backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+backdrop-filter: blur(12px);
+
 }
 
 .header-inner {
@@ -404,12 +406,19 @@ p {
 
   background-size: 48px 48px;
 
-  mask-image:
-    linear-gradient(
-      to bottom,
-      black,
-      transparent 95%
-    );
+  -webkit-mask-image:
+  linear-gradient(
+    to bottom,
+    black,
+    transparent 95%
+  );
+
+mask-image:
+  linear-gradient(
+    to bottom,
+    black,
+    transparent 95%
+  );
 }
 
 .hero-grid {
@@ -1416,9 +1425,6 @@ p {
     margin-top: 8px;
   }
 
-  .hero {
-    min-height: auto;
-  }
 
   .hero-grid {
     gap: 50px;
