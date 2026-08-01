@@ -1,11 +1,827 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ike's Edge</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ike's Edge | Trade Smarter. Find Your Edge.</title>
+
+  <meta
+    name="description"
+    content="Ike's Edge provides real-time trade ideas, market analysis, stock picks, watchlists, and an active trading community for active traders."
+  />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <h1>Ike's Edge</h1>
-  <p>Website coming soon.</p>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="#home" class="brand">
+        <div class="brand-mark">↗</div>
+
+        <div class="brand-text">
+          <span class="brand-name">IKE'S EDGE</span>
+          <span class="brand-tagline">
+            Trade Smarter. Stay Connected. Find Your Edge.
+          </span>
+        </div>
+      </a>
+
+      <button
+        class="mobile-menu-button"
+        id="mobileMenuButton"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#ikes-trades">Ike's Trades</a>
+        <a href="#stock-picks">Stock Picks</a>
+        <a href="#about">About</a>
+        <a href="#results">Results</a>
+        <a href="#faq">FAQ</a>
+
+        <a href="#membership" class="button button-small">
+          Join Ike's Edge
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section class="hero" id="home">
+
+      <div class="hero-background"></div>
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <p class="eyebrow">WELCOME TO IKE'S EDGE</p>
+
+          <h1>
+            Trade Smarter.<br />
+            Stay Connected.<br />
+            <span>Find Your Edge.</span>
+          </h1>
+
+          <p class="hero-description">
+            Real-time trade ideas, market analysis, stock picks, and an active
+            trading community for traders who want a clearer view of the market.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#ikes-trades" class="button">
+              Explore Ike's Trades
+            </a>
+
+            <a href="#stock-picks" class="button button-outline">
+              Explore Stock Picks
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div>
+              <span class="trust-icon">✓</span>
+              Real trades
+            </div>
+
+            <div>
+              <span class="trust-icon">⚡</span>
+              Real-time updates
+            </div>
+
+            <div>
+              <span class="trust-icon">▥</span>
+              Transparent tracking
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+          <div class="dashboard-card">
+
+            <div class="dashboard-header">
+              <div>
+                <span class="dashboard-label">IKE'S EDGE</span>
+                <h3>Morning Market Dashboard</h3>
+              </div>
+
+              <div class="dashboard-status">
+                MARKET OPEN
+              </div>
+            </div>
+
+
+            <div class="dashboard-grid">
+
+              <div class="dashboard-panel">
+                <span class="panel-label">ES LEVELS</span>
+
+                <div class="market-level">
+                  <span>Resistance 2</span>
+                  <strong>5,672.25</strong>
+                </div>
+
+                <div class="market-level">
+                  <span>Resistance 1</span>
+                  <strong>5,632.00</strong>
+                </div>
+
+                <div class="market-level">
+                  <span>Pivot</span>
+                  <strong>5,619.50</strong>
+                </div>
+
+                <div class="market-level positive">
+                  <span>Support 1</span>
+                  <strong>5,587.25</strong>
+                </div>
+
+                <div class="market-level positive">
+                  <span>Support 2</span>
+                  <strong>5,560.75</strong>
+                </div>
+              </div>
+
+
+              <div class="dashboard-panel market-bias">
+                <span class="panel-label">MARKET BIAS</span>
+
+                <div class="bias-value">BULLISH</div>
+
+                <div class="mini-chart">
+                  <span>╱╲</span><span>╱</span><span>╲</span><span>╱╱</span>
+                </div>
+
+                <p>
+                  Plan the trade.<br />
+                  Manage the risk.
+                </p>
+              </div>
+
+
+              <div class="dashboard-panel">
+                <span class="panel-label">TODAY'S FOCUS</span>
+
+                <ul class="focus-list">
+                  <li>Economic Data</li>
+                  <li>Market Open Plan</li>
+                  <li>Key Levels</li>
+                  <li>Risk Management</li>
+                </ul>
+              </div>
+
+            </div>
+
+
+            <div class="trade-alert">
+
+              <div>
+                <span class="panel-label">RECENT TRADE ALERT</span>
+                <strong>SPX CRUMBS +1</strong>
+                <span>Iron Condor</span>
+              </div>
+
+              <div class="trade-result">
+                +$525
+                <span>WINNER</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =========================
+         CHOOSE YOUR EDGE
+    ========================== -->
+    <section class="section section-light" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">MEMBERSHIP OPTIONS</span>
+
+          <h2>Choose Your Edge</h2>
+
+          <p>
+            Two services. Different trading styles. One trusted source.
+          </p>
+        </div>
+
+
+        <div class="product-grid">
+
+          <!-- IKE'S TRADES -->
+          <article class="product-card product-card-blue" id="ikes-trades">
+
+            <div class="product-icon">◫</div>
+
+            <p class="product-label">FOR ACTIVE TRADERS</p>
+
+            <h3>Ike's Trades</h3>
+
+            <p class="product-description">
+              Follow Ike throughout the trading day with market analysis,
+              trade setups, entries, adjustments, and exits.
+            </p>
+
+            <ul class="feature-list">
+              <li>Daily Morning Market Dashboard</li>
+              <li>ES levels, support, resistance &amp; market bias</li>
+              <li>SPX Crumbs +1 trades</li>
+              <li>SPX 0-DTE Crumbs</li>
+              <li>SPX / SPY calendar strategies</li>
+              <li>SPY call debit spreads</li>
+              <li>Stock credit spread opportunities</li>
+              <li>Real-time trade alerts</li>
+              <li>Ike's Trading Lounge</li>
+            </ul>
+
+            <a href="#membership" class="button">
+              Explore Ike's Trades
+            </a>
+
+          </article>
+
+
+          <!-- STOCK PICKS -->
+          <article class="product-card" id="stock-picks">
+
+            <div class="product-icon product-icon-silver">↗</div>
+
+            <p class="product-label">FOR STOCK TRADERS &amp; INVESTORS</p>
+
+            <h3>Stock Picks</h3>
+
+            <p class="product-description">
+              A more deliberate approach to identifying opportunities in
+              individual stocks and following actively managed portfolios.
+            </p>
+
+            <ul class="feature-list">
+              <li>Daily Stock Watchlist</li>
+              <li>Hot Stocks Momentum Portfolio</li>
+              <li>Dividend Value &amp; Growth opportunities</li>
+              <li>Small-Cap Covered Call ideas</li>
+              <li>Entry and exit alerts</li>
+              <li>Portfolio updates</li>
+              <li>Performance tracking</li>
+              <li>Stock Picks Lounge</li>
+            </ul>
+
+            <a href="#membership" class="button button-secondary">
+              Explore Stock Picks
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =========================
+         DIFFERENTIATORS
+    ========================== -->
+    <section class="section section-dark">
+
+      <div class="container">
+
+        <div class="section-heading section-heading-light">
+          <span class="eyebrow">THE IKE'S EDGE DIFFERENCE</span>
+
+          <h2>What Makes Ike's Edge Different?</h2>
+        </div>
+
+
+        <div class="benefit-grid">
+
+          <div class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+
+            <h3>Real-Time</h3>
+
+            <p>
+              Trade alerts and market updates when they happen.
+            </p>
+          </div>
+
+
+          <div class="benefit-card">
+            <div class="benefit-icon">✓</div>
+
+            <h3>Transparent</h3>
+
+            <p>
+              Trades and portfolios are tracked so members can see the results.
+            </p>
+          </div>
+
+
+          <div class="benefit-card">
+            <div class="benefit-icon">◎</div>
+
+            <h3>Practical</h3>
+
+            <p>
+              Clear market levels, setups, and trade ideas without unnecessary noise.
+            </p>
+          </div>
+
+
+          <div class="benefit-card">
+            <div class="benefit-icon">◉</div>
+
+            <h3>Community</h3>
+
+            <p>
+              Connect with Ike and other traders inside the Ike's Edge lounges.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =========================
+         EXPERIENCE
+    ========================== -->
+    <section class="section section-light">
+
+      <div class="container experience-grid">
+
+        <div class="experience-visual">
+
+          <div class="market-screen">
+
+            <div class="market-screen-header">
+              Ike's Edge Trading Channel
+            </div>
+
+            <div class="chart-placeholder">
+
+              <div class="chart-line chart-line-one"></div>
+              <div class="chart-line chart-line-two"></div>
+
+              <span>LIVE MARKET VIEW</span>
+
+            </div>
+
+            <div class="channel-message">
+              <strong>Ike</strong>
+              SPX Crumbs +1 — setup developing.
+            </div>
+
+            <div class="channel-message">
+              <strong>Ike</strong>
+              Adjustment posted. Risk remains defined.
+            </div>
+
+            <div class="channel-message">
+              <strong>Ike</strong>
+              Trade closed. Results tracked.
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="experience-content">
+
+          <span class="eyebrow">THE EXPERIENCE</span>
+
+          <h2>
+            See the Market<br />
+            Through Ike's Lens.
+          </h2>
+
+          <p>
+            Members get access to the same levels, setups, alerts, and trade
+            updates Ike is using throughout the trading day.
+          </p>
+
+
+          <div class="process-list">
+
+            <div class="process-item">
+              <span>01</span>
+
+              <div>
+                <strong>Plan the Trade</strong>
+
+                <p>
+                  Start with market structure, levels, and the setup.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="process-item">
+              <span>02</span>
+
+              <div>
+                <strong>Manage the Risk</strong>
+
+                <p>
+                  Follow adjustments and risk-management decisions.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="process-item">
+              <span>03</span>
+
+              <div>
+                <strong>Track the Result</strong>
+
+                <p>
+                  See how the trade ultimately performed.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =========================
+         RESULTS
+    ========================== -->
+    <section class="section results-section" id="results">
+
+      <div class="container">
+
+        <div class="section-heading section-heading-light">
+
+          <span class="eyebrow">PERFORMANCE</span>
+
+          <h2>Tracked. Documented. Transparent.</h2>
+
+          <p>
+            We believe performance should be documented, not just talked about.
+          </p>
+
+        </div>
+
+
+        <div class="metrics-grid">
+
+          <div class="metric-card">
+            <span class="metric-value">—</span>
+            <span class="metric-label">Trades Tracked</span>
+          </div>
+
+          <div class="metric-card">
+            <span class="metric-value">—</span>
+            <span class="metric-label">Win Rate</span>
+          </div>
+
+          <div class="metric-card">
+            <span class="metric-value">—</span>
+            <span class="metric-label">Total P&amp;L</span>
+          </div>
+
+          <div class="metric-card">
+            <span class="metric-value">—</span>
+            <span class="metric-label">Average Hold Time</span>
+          </div>
+
+        </div>
+
+
+        <div class="results-button-wrap">
+          <a href="#" class="button button-outline-light">
+            Performance Results Coming Soon
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT IKE
+    ========================== -->
+    <section class="section section-light" id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-photo-wrap">
+
+          <div class="temporary-photo">
+            <div class="temporary-silhouette">👤</div>
+          </div>
+
+          <span class="photo-note">
+            Professional photo coming soon
+          </span>
+
+        </div>
+
+
+        <div class="about-content">
+
+          <span class="eyebrow">MEET IKE</span>
+
+          <h2>A Practical Approach to the Markets.</h2>
+
+          <p>
+            Ike's Edge was created to give traders a direct, organized place
+            to follow Ike's market analysis, trades, stock ideas, and portfolios.
+          </p>
+
+          <p>
+            The focus is straightforward: identify opportunities, define the
+            trade, manage the risk, and document the outcome.
+          </p>
+
+          <p class="about-highlight">
+            No hype. No promises. Just the trades, the analysis, the results,
+            and the process.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =========================
+         CTA
+    ========================== -->
+    <section class="membership-cta" id="membership">
+
+      <div class="container membership-inner">
+
+        <div>
+
+          <span class="eyebrow">JOIN IKE'S EDGE</span>
+
+          <h2>Ready to Find Your Edge?</h2>
+
+          <p>
+            Choose the service that fits how you trade — or join both.
+          </p>
+
+        </div>
+
+
+        <div class="membership-buttons">
+
+          <!-- Whop links will be added here -->
+          <a href="#" class="button">
+            Join Ike's Trades
+          </a>
+
+          <a href="#" class="button button-outline-light">
+            Join Stock Picks
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =========================
+         FAQ
+    ========================== -->
+    <section class="section section-light" id="faq">
+
+      <div class="container faq-container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">QUESTIONS</span>
+
+          <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+
+            <button class="faq-question">
+              Do I need to be an experienced trader?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                No. Ike's Edge can be useful to newer and experienced traders,
+                although members should understand that trading involves risk
+                and should make their own trading decisions.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question">
+              Are trades posted in real time?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Trade alerts and updates are posted as Ike executes and manages
+                the trades.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question">
+              Can I join both services?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Yes. Ike's Trades and Stock Picks are separate services, and
+                members may subscribe to either one or both.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question">
+              Where do I access the community?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Membership access, trading lounges, alerts, and community
+                features are delivered through Whop.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question">
+              Can I cancel my membership?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Membership and billing are managed through Whop. Refer to the
+                applicable membership terms for cancellation details.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+
+        <div class="brand">
+          <div class="brand-mark">↗</div>
+
+          <div class="brand-text">
+            <span class="brand-name">IKE'S EDGE</span>
+            <span class="brand-tagline">
+              Trade Smarter. Stay Connected. Find Your Edge.
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>Explore</h4>
+
+        <a href="#ikes-trades">Ike's Trades</a>
+        <a href="#stock-picks">Stock Picks</a>
+        <a href="#results">Results</a>
+        <a href="#faq">FAQ</a>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>Company</h4>
+
+        <a href="#about">About Ike</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Disclosures</a>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>Contact</h4>
+
+        <a href="mailto:ikesedge@gmail.com">
+          ikesedge@gmail.com
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="container footer-disclaimer">
+
+      <p>
+        <strong>Educational purposes only.</strong>
+        Ike's Edge provides educational information and market commentary only.
+        Nothing provided through Ike's Edge constitutes investment, financial,
+        legal, or tax advice or a recommendation to buy or sell any security.
+        Trading and investing involve substantial risk, including the possible
+        loss of principal. Past performance does not guarantee future results.
+      </p>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <span>
+        © 2026 Ike's Edge. All Rights Reserved.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
 </body>
 </html>
