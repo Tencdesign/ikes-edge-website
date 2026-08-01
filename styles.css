@@ -48,6 +48,11 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id],
+article[id] {
+  scroll-margin-top: 90px;
+}
+
 body {
   font-family:
     Inter,
@@ -481,7 +486,7 @@ mask-image:
 
 
 /* =========================================================
-   HERO DASHBOARD
+   HERO PREVIEW
 ========================================================= */
 
 .hero-visual {
@@ -489,21 +494,24 @@ mask-image:
 }
 
 .dashboard-card {
-  padding: 22px;
+  position: relative;
+  min-height: 540px;
+  padding: 12px;
+  overflow: hidden;
 
   background:
     linear-gradient(
       145deg,
       rgba(14, 27, 46, 0.96),
-      rgba(4, 10, 18, 0.98)
+      rgba(4, 10, 18, 0.99)
     );
 
-  border: 1px solid rgba(65, 131, 255, 0.35);
+  border: 1px solid rgba(65, 131, 255, 0.4);
   border-radius: 18px;
 
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.5),
-    0 0 60px rgba(20, 93, 220, 0.14);
+    0 0 60px rgba(20, 93, 220, 0.18);
 
   transform:
     perspective(1000px)
@@ -511,180 +519,69 @@ mask-image:
     rotateX(1deg);
 }
 
-.dashboard-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: center;
+.dealer-preview-frame::before {
+  content: "";
 
-  padding-bottom: 16px;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 
-  border-bottom: 1px solid var(--border-dark);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(3, 9, 19, 0.18) 0%,
+      rgba(3, 9, 19, 0.02) 18%,
+      rgba(3, 9, 19, 0) 63%,
+      rgba(3, 9, 19, 0.38) 100%
+    );
+
+  pointer-events: none;
 }
 
-.dashboard-label {
-  font-size: 0.68rem;
-  font-weight: 800;
-  color: var(--blue-bright);
-  letter-spacing: 0.15em;
-}
-
-.dashboard-header h3 {
-  margin-top: 3px;
-  font-size: 1.15rem;
-}
-
-.dashboard-status {
-  padding: 6px 10px;
-
-  color: #47e6a3;
-  background: rgba(25, 195, 125, 0.1);
-
-  border: 1px solid rgba(25, 195, 125, 0.32);
-  border-radius: 6px;
-
-  font-size: 0.65rem;
-  font-weight: 800;
-  letter-spacing: 0.07em;
-}
-
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-
-  margin-top: 15px;
-}
-
-.dashboard-panel {
-  min-height: 190px;
-  padding: 14px;
-
-  background: rgba(255, 255, 255, 0.025);
-
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 10px;
-}
-
-.panel-label {
+.dealer-preview-image {
   display: block;
+  width: 100%;
+  height: 516px;
+  object-fit: cover;
+  object-position: 50% 0%;
+  transform: scale(1.12) translateY(-10px);
+  transform-origin: center top;
 
-  margin-bottom: 12px;
-
-  color: #94a3b8;
-  font-size: 0.62rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+  border-radius: 12px;
 }
 
-.market-level {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
+.preview-badge {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  z-index: 2;
 
-  margin-bottom: 10px;
+  padding: 9px 14px;
+
+  color: var(--text-white);
+  background: rgba(5, 14, 27, 0.8);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(87, 149, 255, 0.34);
+  border-radius: 999px;
 
   font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.market-level span {
-  color: #ff7272;
+.preview-badge-secondary {
+  top: 22px;
+  right: 22px;
+  bottom: auto;
+  left: auto;
+
+  color: #d9e4f2;
+  background: rgba(7, 17, 31, 0.74);
+  border-color: rgba(255, 255, 255, 0.14);
 }
-
-.market-level strong {
-  color: #f3f4f6;
-}
-
-.market-level.positive span {
-  color: #25d991;
-}
-
-.market-bias {
-  text-align: center;
-}
-
-.bias-value {
-  margin-top: 22px;
-
-  color: #2de4a0;
-
-  font-size: 1.45rem;
-  font-weight: 900;
-}
-
-.mini-chart {
-  margin: 20px 0 14px;
-
-  color: #28dd99;
-  font-size: 1.1rem;
-}
-
-.market-bias p {
-  color: #b9c4d0;
-  font-size: 0.72rem;
-}
-
-.focus-list {
-  list-style: none;
-}
-
-.focus-list li {
-  margin-bottom: 13px;
-  color: #d4dbe4;
-  font-size: 0.72rem;
-}
-
-.focus-list li::before {
-  content: "✓";
-  margin-right: 6px;
-  color: #2de4a0;
-}
-
-.trade-alert {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  margin-top: 12px;
-  padding: 14px 16px;
-
-  background: rgba(16, 35, 58, 0.78);
-
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 9px;
-}
-
-.trade-alert strong,
-.trade-alert > div > span {
-  display: block;
-}
-
-.trade-alert strong {
-  font-size: 0.85rem;
-}
-
-.trade-alert > div > span:last-child {
-  color: #9ca9b8;
-  font-size: 0.68rem;
-}
-
-.trade-result {
-  text-align: right;
-
-  color: #2de4a0;
-
-  font-size: 1.4rem;
-  font-weight: 900;
-}
-
-.trade-result span {
-  display: block;
-
-  font-size: 0.62rem;
-  letter-spacing: 0.09em;
-}
-
-
 /* =========================================================
    PRODUCT CARDS
 ========================================================= */
@@ -1270,22 +1167,43 @@ mask-image:
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  align-items: start;
+  column-gap: 56px;
+  row-gap: 28px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-logo-link {
+  display: inline-flex;
+  align-items: center;
 }
 
 .footer-links h4 {
   margin-bottom: 14px;
+
   font-size: 0.85rem;
+  color: var(--text-white);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer-links a {
   display: block;
 
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 
   color: #aeb8c4;
   font-size: 0.82rem;
+  transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
@@ -1293,20 +1211,27 @@ mask-image:
 }
 
 .footer-disclaimer {
-  margin-top: 42px;
-  padding-top: 24px;
+  margin-top: 30px;
+  padding-top: 28px;
+  padding-bottom: 0;
+  width: 100%;
+  text-align: center;
 
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-disclaimer p {
+  max-width: 1050px;
+  margin: 0 auto;
   color: #8f9aa8;
   font-size: 0.72rem;
   line-height: 1.7;
 }
 
 .footer-bottom {
-  margin-top: 20px;
+  margin-top: 22px;
+  padding-bottom: 24px;
+  text-align: center;
 
   color: #6f7b89;
 
@@ -1447,11 +1372,14 @@ mask-image:
   }
 
   .dashboard-card {
+    min-height: 500px;
     transform: none;
   }
 
-  .dashboard-grid {
-    grid-template-columns: 1fr;
+  .dealer-preview-image {
+    height: 476px;
+    object-position: 50% 0%;
+    transform: scale(1.1) translateY(-8px);
   }
 
   .product-grid {
@@ -1495,6 +1423,7 @@ mask-image:
 
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .temporary-photo {
@@ -1528,17 +1457,26 @@ mask-image:
   }
 
   .dashboard-card {
-    padding: 14px;
+    min-height: 420px;
+    padding: 10px;
   }
 
-  .trade-alert {
-    align-items: flex-start;
-    gap: 14px;
-    flex-direction: column;
+  .dealer-preview-image {
+    height: 398px;
+    object-position: 50% 0%;
+    transform: scale(1.08) translateY(-6px);
   }
 
-  .trade-result {
-    text-align: left;
+  .preview-badge {
+    left: 16px;
+    bottom: 16px;
+    padding: 8px 12px;
+    font-size: 0.62rem;
+  }
+
+  .preview-badge-secondary {
+    top: 16px;
+    right: 16px;
   }
 
 }
@@ -1576,3 +1514,67 @@ mask-image:
   }
 
 }
+
+/* =========================================================
+   BRAND LOGO
+========================================================= */
+
+.site-logo {
+  display: block;
+  width: 168px;
+  height: auto;
+  object-fit: contain;
+}
+
+.site-logo-footer {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  .site-logo {
+    width: 132px;
+    height: auto;
+  }
+
+  .site-logo-footer {
+    width: 220px;
+    height: auto;
+  }
+}
+
+/* =========================================================
+   HERO BRANDING ENHANCEMENT
+========================================================= */
+
+.hero::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 72% 42%,
+      rgba(25, 115, 255, 0.16),
+      transparent 35%
+    ),
+    linear-gradient(
+      115deg,
+      transparent 0%,
+      transparent 55%,
+      rgba(30, 110, 255, 0.05) 100%
+    );
+
+  z-index: 0;
+}
+
+.hero-content,
+.hero-visual {
+  position: relative;
+  z-index: 2;
+}
+

@@ -22,16 +22,13 @@
   <header class="site-header">
     <div class="container header-inner">
 
-      <a href="#home" class="brand">
-        <div class="brand-mark">↗</div>
-
-        <div class="brand-text">
-          <span class="brand-name">IKE'S EDGE</span>
-          <span class="brand-tagline">
-            Trade Smarter. Stay Connected. Find Your Edge.
-          </span>
-        </div>
-      </a>
+<a href="#home" class="brand">
+  <img
+    src="images/ikes-edge-logo-header.png"
+    alt="Ike's Edge"
+    class="site-logo"
+  />
+</a>
 
       <button
         class="mobile-menu-button"
@@ -50,7 +47,7 @@
         <a href="#results">Results</a>
         <a href="#faq">FAQ</a>
 
-        <a href="#membership" class="button button-small">
+        <a href="#services" class="button button-small">
           Join Ike's Edge
         </a>
       </nav>
@@ -117,101 +114,17 @@
 
         <div class="hero-visual">
 
-          <div class="dashboard-card">
-
-            <div class="dashboard-header">
-              <div>
-                <span class="dashboard-label">IKE'S EDGE</span>
-                <h3>Morning Market Dashboard</h3>
-              </div>
-
-              <div class="dashboard-status">
-                MARKET OPEN
-              </div>
-            </div>
-
-
-            <div class="dashboard-grid">
-
-              <div class="dashboard-panel">
-                <span class="panel-label">ES LEVELS</span>
-
-                <div class="market-level">
-                  <span>Resistance 2</span>
-                  <strong>5,672.25</strong>
-                </div>
-
-                <div class="market-level">
-                  <span>Resistance 1</span>
-                  <strong>5,632.00</strong>
-                </div>
-
-                <div class="market-level">
-                  <span>Pivot</span>
-                  <strong>5,619.50</strong>
-                </div>
-
-                <div class="market-level positive">
-                  <span>Support 1</span>
-                  <strong>5,587.25</strong>
-                </div>
-
-                <div class="market-level positive">
-                  <span>Support 2</span>
-                  <strong>5,560.75</strong>
-                </div>
-              </div>
-
-
-              <div class="dashboard-panel market-bias">
-                <span class="panel-label">MARKET BIAS</span>
-
-                <div class="bias-value">BULLISH</div>
-
-                <div class="mini-chart">
-                  <span>╱╲</span><span>╱</span><span>╲</span><span>╱╱</span>
-                </div>
-
-                <p>
-                  Plan the trade.<br />
-                  Manage the risk.
-                </p>
-              </div>
-
-
-              <div class="dashboard-panel">
-                <span class="panel-label">TODAY'S FOCUS</span>
-
-                <ul class="focus-list">
-                  <li>Economic Data</li>
-                  <li>Market Open Plan</li>
-                  <li>Key Levels</li>
-                  <li>Risk Management</li>
-                </ul>
-              </div>
-
-            </div>
-
-
-            <div class="trade-alert">
-
-              <div>
-                <span class="panel-label">RECENT TRADE ALERT</span>
-                <strong>SPX CRUMBS +1</strong>
-                <span>Iron Condor</span>
-              </div>
-
-              <div class="trade-result">
-                +$525
-                <span>WINNER</span>
-              </div>
-
-            </div>
-
+          <div class="dashboard-card dealer-preview-frame">
+            <span class="preview-badge">Daily Dealer Levels</span>
+            <span class="preview-badge preview-badge-secondary">Member Preview</span>
+            <img
+              src="images/ikes-dealer-levels-preview.png"
+              alt="Ike's Edge Dealer Levels preview"
+              class="dealer-preview-image"
+            />
           </div>
 
         </div>
-
       </div>
     </section>
 
@@ -263,8 +176,13 @@
               <li>Ike's Trading Lounge</li>
             </ul>
 
-            <a href="#membership" class="button">
-              Explore Ike's Trades
+            <a
+              href="https://whop.com/joined/ikesedge/products/ikes-trades/"
+              class="button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join Ike's Trades &rarr;
             </a>
 
           </article>
@@ -295,8 +213,13 @@
               <li>Stock Picks Lounge</li>
             </ul>
 
-            <a href="#membership" class="button button-secondary">
-              Explore Stock Picks
+            <a
+              href="https://whop.com/joined/ikesedge/products/stockpicks/"
+              class="button button-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join Stock Picks &rarr;
             </a>
 
           </article>
@@ -608,12 +531,21 @@
 
         <div class="membership-buttons">
 
-          <!-- Whop links will be added here -->
-          <a href="#" class="button">
+          <a
+            href="https://whop.com/joined/ikesedge/products/ikes-trades/"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Join Ike's Trades
           </a>
 
-          <a href="#" class="button button-outline-light">
+          <a
+            href="https://whop.com/joined/ikesedge/products/stockpicks/"
+            class="button button-outline-light"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Join Stock Picks
           </a>
 
@@ -740,84 +672,60 @@
        FOOTER
   ========================== -->
   <footer class="site-footer">
-
     <div class="container footer-grid">
-
       <div class="footer-brand">
-
-        <div class="brand">
-          <div class="brand-mark">↗</div>
-
-          <div class="brand-text">
-            <span class="brand-name">IKE'S EDGE</span>
-            <span class="brand-tagline">
-              Trade Smarter. Stay Connected. Find Your Edge.
-            </span>
-          </div>
-        </div>
-
+        <a href="#home" class="footer-logo-link" aria-label="Ike's Edge home">
+          <img
+            src="images/ikes-edge-logo.png"
+            alt="Ike's Edge"
+            class="site-logo site-logo-footer"
+          />
+        </a>
       </div>
 
-
       <div class="footer-links">
-
         <h4>Explore</h4>
-
         <a href="#ikes-trades">Ike's Trades</a>
         <a href="#stock-picks">Stock Picks</a>
         <a href="#results">Results</a>
         <a href="#faq">FAQ</a>
-
       </div>
 
-
       <div class="footer-links">
-
         <h4>Company</h4>
-
         <a href="#about">About Ike</a>
         <a href="#">Terms &amp; Conditions</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Disclosures</a>
-
       </div>
-
 
       <div class="footer-links">
-
         <h4>Contact</h4>
-
-        <a href="mailto:ikesedge@gmail.com">
-          ikesedge@gmail.com
+        <a href="mailto:ikesedge@gmail.com">ikesedge@gmail.com</a>
+        <a
+          href="https://www.whop.com/ikesedge"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Member Access / Store
         </a>
-
       </div>
-
     </div>
-
 
     <div class="container footer-disclaimer">
-
       <p>
-        <strong>Educational purposes only.</strong>
-        Ike's Edge provides educational information and market commentary only.
-        Nothing provided through Ike's Edge constitutes investment, financial,
-        legal, or tax advice or a recommendation to buy or sell any security.
-        Trading and investing involve substantial risk, including the possible
-        loss of principal. Past performance does not guarantee future results.
+        Educational purposes only. Ike's Edge provides educational information
+        and market commentary only. Nothing provided through Ike's Edge
+        constitutes investment, financial, legal, or tax advice or a
+        recommendation to buy or sell any security. Trading and investing
+        involve substantial risk, including the possible loss of principal.
+        Past performance does not guarantee future results.
       </p>
-
     </div>
-
 
     <div class="container footer-bottom">
-
-      <span>
-        © 2026 Ike's Edge. All Rights Reserved.
-      </span>
-
+      <span>&copy; 2026 Ike's Edge. All Rights Reserved.</span>
     </div>
-
   </footer>
 
 
@@ -825,3 +733,6 @@
 
 </body>
 </html>
+
+
+
