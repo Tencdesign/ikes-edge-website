@@ -18,9 +18,13 @@ The current version includes:
 - enhanced Ike's Edge logo placement in the header and footer
 - a hero preview built around the Daily Dealer Levels image
 - improved hero readability with a subtle educational-use notice near the primary CTA area
+- standardized two-line heading hierarchy across the major homepage sections
 - refined "Choose Your Edge" spacing, typography hierarchy, and wider product-card layout
 - centered membership buttons and stronger product-card copy readability
+- refined dark and light section panels for stronger readability and visual consistency
 - a real Daily Brief product image in the Experience section instead of a mock trading graphic
+- a July 2026 Crumbs+1 performance spotlight with documented monthly results and strategy details
+- an in-section Ike profile portrait in the About section
 - direct Whop membership links for both Ike's Trades and Stock Picks
 - improved in-page navigation offsets for sticky-header section links
 - browser compatibility support for blur and mask effects
@@ -33,6 +37,7 @@ The `images/` directory currently includes branded and preview imagery used by t
 - `ikes-edge-logo.png`
 - `ikes-dealer-levels-preview.png`
 - `Daily Brief Image.png`
+- `ike-profile.jpeg`
 
 ## Local preview
 
