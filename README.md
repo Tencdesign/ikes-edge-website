@@ -17,6 +17,10 @@ The current version includes:
 
 - enhanced Ike's Edge logo placement in the header and footer
 - a hero preview built around the Daily Dealer Levels image
+- improved hero readability with a subtle educational-use notice near the primary CTA area
+- refined "Choose Your Edge" spacing, typography hierarchy, and wider product-card layout
+- centered membership buttons and stronger product-card copy readability
+- a real Daily Brief product image in the Experience section instead of a mock trading graphic
 - direct Whop membership links for both Ike's Trades and Stock Picks
 - improved in-page navigation offsets for sticky-header section links
 - browser compatibility support for blur and mask effects
