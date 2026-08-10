@@ -11,6 +11,10 @@
   --blue: #1677ff;
   --blue-bright: #2e8cff;
   --blue-dark: #0d55c7;
+  --green: #22a447;
+  --green-dark: #177a35;
+  --green-rgb: 34, 164, 71;
+  --orange: #f59e0b;
   --text-dark: #111827;
   --text-mid: #4b5563;
   --text-light: #d8e0ea;
@@ -234,6 +238,16 @@ p {
 .button:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 28px rgba(22, 119, 255, 0.32);
+}
+
+.button-green {
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+  color: var(--text-white);
+  box-shadow: 0 8px 22px rgba(var(--green-rgb), 0.24);
+}
+
+.button-green:hover {
+  box-shadow: 0 12px 28px rgba(var(--green-rgb), 0.34);
 }
 
 .button-small {
@@ -636,6 +650,10 @@ p {
   color: var(--blue-bright);
 }
 
+.product-card-stock h3 {
+  color: var(--green);
+}
+
 .product-description {
   margin-bottom: 26px;
   color: #bac4cf;
@@ -663,6 +681,10 @@ p {
   margin-right: 9px;
   color: var(--blue-bright);
   font-weight: 900;
+}
+
+.product-card-stock .feature-list li::before {
+  color: var(--green);
 }
 
 .product-card-button {
@@ -693,7 +715,7 @@ p {
 
 .benefit-icon {
   margin-bottom: 14px;
-  color: #f59e0b;
+  color: var(--orange);
   font-size: 2.2rem;
 }
 
@@ -830,7 +852,7 @@ p {
   display: inline-flex;
   align-items: center;
   padding: 8px 14px;
-  background: linear-gradient(135deg, #f59e0b, #ea580c);
+  background: linear-gradient(135deg, var(--orange), #ea580c);
   color: var(--text-white);
   border-radius: 8px;
   box-shadow: 0 10px 24px rgba(245, 158, 11, 0.18);
@@ -867,6 +889,29 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 12px;
   box-shadow: inset 0 1px 0 rgba(46, 140, 255, 0.18);
+}
+
+.performance-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 13px;
+  color: var(--blue-bright);
+  border: 1px solid rgba(46, 140, 255, 0.55);
+  border-radius: 999px;
+  background: rgba(22, 119, 255, 0.08);
+  box-shadow: inset 0 0 14px rgba(46, 140, 255, 0.1);
+  font-size: 0.94rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.performance-icon-small {
+  width: 28px;
+  height: 28px;
+  margin: 0 auto 7px;
+  font-size: 0.78rem;
 }
 
 .metric-card::before {
@@ -910,6 +955,7 @@ p {
 .performance-detail-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4px;
   text-align: center;
 }
@@ -965,7 +1011,7 @@ p {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 340px 1fr;
   gap: 70px;
   align-items: center;
 }
@@ -975,19 +1021,16 @@ p {
 }
 
 .temporary-photo {
-  width: 240px;
-  height: 240px;
+  width: clamp(250px, 24vw, 290px);
+  height: auto;
   margin: 0 auto;
-  overflow: hidden;
-  border-radius: 50%;
   box-shadow: var(--shadow);
 }
 
 .about-profile-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 22%;
+  height: auto;
+  object-fit: contain;
 }
 
 .about-content p {
@@ -1056,7 +1099,13 @@ p {
 ========================================================= */
 
 .faq-container {
-  max-width: 900px;
+  max-width: 1060px;
+}
+
+.faq-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
 }
 
 .faq-list {
@@ -1260,6 +1309,10 @@ p {
     margin-right: auto;
   }
 
+  .faq-columns {
+    gap: 32px;
+  }
+
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1433,9 +1486,17 @@ p {
     gap: 24px;
   }
 
+  .faq-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .faq-columns .faq-list + .faq-list {
+    border-top: 0;
+  }
+
   .temporary-photo {
-    width: 200px;
-    height: 200px;
+    width: clamp(190px, 58vw, 220px);
   }
 }
 
