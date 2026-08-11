@@ -20,7 +20,9 @@ This repository contains the static marketing site for Ike's Edge, including:
 
 The current version includes:
 
+- a V1 static-site baseline covering homepage, product pages, resources, performance reporting, and legal/policy pages
 - enhanced Ike's Edge logo placement in the header and footer
+- standardized header navigation across all public pages
 - a hero preview built around the Daily Dealer Levels image
 - improved hero readability with a subtle educational-use notice near the primary CTA area
 - standardized two-line heading hierarchy across the major homepage sections
@@ -53,3 +55,7 @@ The `images/` directory currently includes branded and preview imagery used by t
 ## Local preview
 
 Because this is a simple static site, you can preview it by opening `index.html`, `ikes-trades.html`, `stock-picks.html`, `performance.html`, `resources.html`, `terms.html`, `privacy.html`, or `disclosures.html` in a browser, or by serving the folder with any lightweight static server.
+
+## V1 baseline
+
+The V1 baseline uses the same header navigation order on every page: Home, Ike's Trades, Stock Picks, Performance, Resources, About, FAQ, and Join Ike's Edge. The Join Ike's Edge header link points to Whop and opens in a new tab.
