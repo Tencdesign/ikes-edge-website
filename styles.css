@@ -2141,6 +2141,16 @@ p {
   justify-content: center;
 }
 
+/* Performance detail page */
+.performance-hero, .methodology-section, .performance-final-cta { background: radial-gradient(circle at 78% 30%, rgba(22, 119, 255, .2), transparent 38%), #07111f; color: var(--text-white); }
+.performance-hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr .95fr; gap: 54px; align-items: center; min-height: 650px; padding: 62px 0; }
+.performance-hero-copy h1 { margin: 14px 0 22px; color: #fff; font-size: clamp(3.1rem,4.5vw,4.75rem); line-height: .98; }.performance-hero-copy h1 span, .performance-dashboard > span, .report-grid b { color: var(--blue-bright); }.performance-hero-copy > p { max-width: 650px; color: #d1d9e3; font-size: 1.1rem; line-height: 1.78; }
+.performance-dashboard { padding: 28px; background: linear-gradient(145deg, rgba(14,27,46,.98), rgba(4,10,18,.99)); border: 1px solid rgba(46,140,255,.42); border-radius: 12px; box-shadow: var(--shadow); }.performance-dashboard > span, .report-grid b { font-size: .72rem; letter-spacing: .09em; }.performance-dashboard h3 { margin: 12px 0 0; color: #fff; font-size: 2rem; }.performance-dashboard > p { color: #aebdce; }.performance-dashboard > div { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin: 22px 0; }.performance-dashboard strong { color: #fff; font-size: 1.22rem; }.performance-dashboard small { display: block; color: #9fb1c5; font-size: .62rem; letter-spacing: .06em; }
+.report-grid, .performance-context { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 18px; }.report-grid article, .performance-context article { padding: 24px; background: #fff; border: 1px solid var(--border-light); border-top: 3px solid var(--blue); border-radius: 8px; box-shadow: 0 15px 36px rgba(15,23,42,.06); }.report-grid h3 { margin: 12px 0 7px; font-size: 1.08rem; }.report-grid p { line-height: 1.62; }.methodology-section .report-grid article { background: rgba(10,21,36,.76); border-color: rgba(46,140,255,.2); }.methodology-section .report-grid p { color: #c9d3df; }.report-note { max-width: 850px; margin: 26px auto 0; text-align: center; font-weight: 700; }.report-note-dark { color: #c9d3df; }.performance-context { grid-template-columns: repeat(2,minmax(0,1fr)); }.performance-context h3 { margin-bottom: 14px; }.performance-context ul { padding-left: 20px; }.performance-context li { margin-bottom: 8px; color: var(--text-mid); }.performance-context article:last-child { background: #f9fafb; border-top-color: var(--orange); }.performance-final-cta .section-heading { margin-bottom: 0; }.performance-final-cta h2 { color: #fff; font-size: clamp(2rem,3.3vw,3rem); }
+
+@media (max-width: 1024px) { .performance-hero-grid { grid-template-columns: 1fr; min-height: auto; }.report-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 760px) { .performance-hero-grid { gap: 38px; padding: 50px 0; }.performance-dashboard > div, .report-grid, .performance-context { grid-template-columns: 1fr; }.performance-dashboard strong { font-size: 1.45rem; }.performance-dashboard small { margin-bottom: 10px; } }
+
 .footer-links {
   display: flex;
   flex-direction: column;
