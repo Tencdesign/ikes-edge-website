@@ -11,6 +11,7 @@ This repository contains the static marketing site for Ike's Edge, including:
 - the Stock Picks detail page in `stock-picks.html`
 - the Performance detail page in `performance.html`
 - the Resources landing page in `resources.html`
+- legal and policy pages in `terms.html`, `privacy.html`, and `disclosures.html`
 - site styling in `styles.css`
 - small interactive behaviors in `script.js`
 - brand and preview assets in `images/`
@@ -31,6 +32,7 @@ The current version includes:
 - a dedicated Stock Picks detail page with organized watchlists, live portfolios, Dividend Portfolio updates, stock alerts, membership pricing, and FAQ content
 - a dedicated Performance detail page with documented Crumbs+1 July 2026 results, methodology, strategy context, disclosures, and future-reporting placeholders
 - a dedicated Resources landing page that previews member tools, Daily Dealer Levels, market prep, alerts, watchlists, portfolio updates, community access, and performance tracking
+- dedicated Terms & Conditions, Privacy Policy, and Disclosures pages with reusable legal-page layout styles and shared footer links
 - a July 2026 Crumbs+1 performance spotlight with documented monthly results and strategy details
 - an in-section Ike profile portrait in the About section
 - direct Whop membership links for both Ike's Trades and Stock Picks
@@ -50,4 +52,4 @@ The `images/` directory currently includes branded and preview imagery used by t
 
 ## Local preview
 
-Because this is a simple static site, you can preview it by opening `index.html`, `ikes-trades.html`, `stock-picks.html`, `performance.html`, or `resources.html` in a browser, or by serving the folder with any lightweight static server.
+Because this is a simple static site, you can preview it by opening `index.html`, `ikes-trades.html`, `stock-picks.html`, `performance.html`, `resources.html`, `terms.html`, `privacy.html`, or `disclosures.html` in a browser, or by serving the folder with any lightweight static server.
