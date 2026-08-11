@@ -7,6 +7,7 @@ Public website for Ike's Edge.
 This repository contains the static marketing site for Ike's Edge, including:
 
 - the landing page markup in `index.html`
+- the flagship Ike's Trades detail page in `ikes-trades.html`
 - site styling in `styles.css`
 - small interactive behaviors in `script.js`
 - brand and preview assets in `images/`
@@ -23,6 +24,7 @@ The current version includes:
 - centered membership buttons and stronger product-card copy readability
 - refined dark and light section panels for stronger readability and visual consistency
 - a real Daily Brief product image in the Experience section instead of a mock trading graphic
+- a dedicated flagship Ike's Trades detail page with trading-day flow, strategy coverage, Trading Lounge context, membership pricing, FAQ content, and Whop calls to action
 - a July 2026 Crumbs+1 performance spotlight with documented monthly results and strategy details
 - an in-section Ike profile portrait in the About section
 - direct Whop membership links for both Ike's Trades and Stock Picks
@@ -37,8 +39,9 @@ The `images/` directory currently includes branded and preview imagery used by t
 - `ikes-edge-logo.png`
 - `ikes-dealer-levels-preview.png`
 - `Daily Brief Image.png`
-- `ike-profile.jpeg`
+- `Ike-Profile.jpeg`
+- `Ike-Oval-Version.jpeg`
 
 ## Local preview
 
-Because this is a simple static site, you can preview it by opening `index.html` in a browser or by serving the folder with any lightweight static server.
+Because this is a simple static site, you can preview it by opening `index.html` or `ikes-trades.html` in a browser, or by serving the folder with any lightweight static server.

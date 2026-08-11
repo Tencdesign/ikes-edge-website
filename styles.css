@@ -196,12 +196,12 @@ p {
 }
 
 .difference-section {
-  padding-top: 76px;
-  padding-bottom: 68px;
+  padding-top: 52px;
+  padding-bottom: 48px;
 }
 
 .difference-section .section-heading {
-  margin-bottom: 34px;
+  margin-bottom: 24px;
 }
 
 .difference-section .section-heading-pair-dark .eyebrow {
@@ -701,10 +701,12 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 .benefit-card {
-  padding: 26px 34px 24px;
+  padding: 14px 28px 12px;
   text-align: center;
   border-right: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -714,21 +716,57 @@ p {
 }
 
 .benefit-icon {
-  margin-bottom: 14px;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 10px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.035);
+  box-shadow: inset 0 0 18px rgba(255, 255, 255, 0.04);
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.benefit-icon-orange {
   color: var(--orange);
-  font-size: 2.2rem;
+  box-shadow:
+    inset 0 0 18px rgba(245, 158, 11, 0.12),
+    0 0 18px rgba(245, 158, 11, 0.08);
+}
+
+.benefit-icon-green {
+  color: var(--green);
+  box-shadow:
+    inset 0 0 18px rgba(var(--green-rgb), 0.12),
+    0 0 18px rgba(var(--green-rgb), 0.08);
+}
+
+.benefit-icon-svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .benefit-card h3 {
-  margin-bottom: 12px;
-  font-size: 1.22rem;
-  letter-spacing: 0.01em;
+  margin-bottom: 8px;
+  color: var(--text-white);
+  font-size: 1.04rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .benefit-card p {
   color: #bec8d3;
-  font-size: 1rem;
-  line-height: 1.68;
+  font-size: 0.94rem;
+  line-height: 1.52;
 }
 
 
@@ -829,7 +867,7 @@ p {
 
 .results-section {
   position: relative;
-  padding: 84px 0;
+  padding: 54px 0 48px;
   background:
     radial-gradient(
       circle at center,
@@ -846,17 +884,17 @@ p {
 
 .signature-ribbon {
   position: absolute;
-  top: 14px;
+  top: 2px;
   left: 6px;
   z-index: 2;
   display: inline-flex;
   align-items: center;
-  padding: 8px 14px;
+  padding: 7px 12px;
   background: linear-gradient(135deg, var(--orange), #ea580c);
   color: var(--text-white);
   border-radius: 8px;
   box-shadow: 0 10px 24px rgba(245, 158, 11, 0.18);
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -867,8 +905,8 @@ p {
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-top: 4px;
+  gap: 12px;
+  margin-top: 0;
 }
 
 .metric-card {
@@ -877,8 +915,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 140px;
-  padding: 20px;
+  min-height: 112px;
+  padding: 16px 14px 15px;
   text-align: center;
   background:
     linear-gradient(
@@ -887,31 +925,31 @@ p {
       rgba(8, 17, 29, 0.92)
     );
   border: 1px solid rgba(255, 255, 255, 0.13);
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: inset 0 1px 0 rgba(46, 140, 255, 0.18);
 }
 
 .performance-icon {
   display: grid;
   place-items: center;
-  width: 34px;
-  height: 34px;
-  margin-bottom: 13px;
+  width: 28px;
+  height: 28px;
+  margin-bottom: 9px;
   color: var(--blue-bright);
   border: 1px solid rgba(46, 140, 255, 0.55);
   border-radius: 999px;
   background: rgba(22, 119, 255, 0.08);
   box-shadow: inset 0 0 14px rgba(46, 140, 255, 0.1);
-  font-size: 0.94rem;
+  font-size: 0.78rem;
   font-weight: 900;
   line-height: 1;
 }
 
 .performance-icon-small {
-  width: 28px;
-  height: 28px;
-  margin: 0 auto 7px;
-  font-size: 0.78rem;
+  width: 24px;
+  height: 24px;
+  margin: 0 0 0;
+  font-size: 0.68rem;
 }
 
 .metric-card::before {
@@ -927,15 +965,15 @@ p {
 
 .metric-value {
   color: #f4f9ff;
-  font-size: clamp(2rem, 2.8vw, 2.5rem);
+  font-size: clamp(1.75rem, 2.35vw, 2.16rem);
   font-weight: 800;
   line-height: 1;
 }
 
 .metric-label {
-  margin-top: 8px;
+  margin-top: 6px;
   color: #c3cedb;
-  font-size: 0.84rem;
+  font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -944,25 +982,42 @@ p {
 .performance-detail-strip {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 18px;
-  padding: 14px 16px;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 11px 12px;
   background: rgba(10, 21, 36, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 14px;
+  border-radius: 10px;
 }
 
 .performance-detail-item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  grid-template-areas:
+    "icon label"
+    "icon value";
   align-items: center;
-  gap: 4px;
-  text-align: center;
+  column-gap: 8px;
+  row-gap: 1px;
+  min-width: 0;
+  text-align: left;
+}
+
+.performance-detail-item .performance-icon {
+  grid-area: icon;
+}
+
+.performance-detail-label {
+  grid-area: label;
+}
+
+.performance-detail-value {
+  grid-area: value;
 }
 
 .performance-detail-label {
   color: #90a1b7;
-  font-size: 0.72rem;
+  font-size: 0.66rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -970,17 +1025,17 @@ p {
 
 .performance-detail-value {
   color: #eef4fb;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.45;
 }
 
 .performance-statement {
   position: relative;
-  margin-top: 22px;
-  padding-top: 18px;
+  margin-top: 16px;
+  padding-top: 13px;
   color: #e6eef9;
-  font-size: 1.16rem;
+  font-size: 1.05rem;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -991,13 +1046,13 @@ p {
   display: block;
   width: 84px;
   height: 2px;
-  margin: 0 auto 14px;
+  margin: 0 auto 10px;
   border-radius: 999px;
   background: rgba(46, 140, 255, 0.7);
 }
 
 .performance-disclosure {
-  margin-top: 14px;
+  margin-top: 8px;
   color: #9cacbf;
   font-size: 0.82rem;
   line-height: 1.65;
@@ -1080,11 +1135,12 @@ p {
 }
 
 .performance-heading p {
-  font-size: clamp(1.25rem, 1.8vw, 1.375rem);
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+  line-height: 1.55;
 }
 
 .performance-heading {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .membership-buttons {
@@ -1181,6 +1237,438 @@ p {
 .footer-logo-link {
   display: inline-flex;
   align-items: center;
+}
+
+
+/* =========================================================
+   IKE'S TRADES DETAIL PAGE
+========================================================= */
+
+.nav-current {
+  color: var(--text-white);
+}
+
+.nav-current::after {
+  transform: scaleX(1) !important;
+}
+
+.trades-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 30%, rgba(17, 88, 210, 0.25), transparent 38%),
+    linear-gradient(135deg, #050c16 0%, #081322 55%, #07111f 100%);
+  color: var(--text-white);
+}
+
+.trades-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 58px;
+  align-items: center;
+  min-height: 690px;
+  padding-top: 62px;
+  padding-bottom: 64px;
+}
+
+.trades-hero-content h1 {
+  max-width: 680px;
+  margin: 14px 0 22px;
+  color: var(--text-white);
+  font-size: clamp(3.1rem, 4.5vw, 4.75rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.trades-hero-content h1 span {
+  color: var(--blue-bright);
+}
+
+.trades-hero-content > p {
+  max-width: 650px;
+  color: #d1d9e3;
+  font-size: 1.1rem;
+  line-height: 1.78;
+}
+
+.trades-trust {
+  max-width: 720px;
+}
+
+.trades-preview-frame {
+  max-width: 585px;
+  margin-left: auto;
+}
+
+.trades-day-section {
+  padding-top: 72px;
+}
+
+.trades-day-grid,
+.strategy-grid,
+.fit-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.trades-day-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.trades-process-card,
+.strategy-card,
+.fit-card,
+.pricing-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+}
+
+.trades-process-card {
+  position: relative;
+  padding: 24px 24px 26px;
+}
+
+.trades-card-number {
+  color: rgba(22, 119, 255, 0.18);
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.trades-card-icon {
+  position: absolute;
+  top: 25px;
+  right: 24px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: var(--blue);
+  border: 1px solid rgba(22, 119, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(22, 119, 255, 0.06);
+  font-weight: 900;
+}
+
+.trades-process-card h3,
+.strategy-card h3,
+.fit-card h3 {
+  margin: 15px 0 10px;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.trades-process-card p,
+.strategy-card p,
+.fit-card p {
+  font-size: 0.98rem;
+  line-height: 1.68;
+}
+
+.trades-levels-section {
+  background:
+    linear-gradient(135deg, #07111f 0%, #0b1727 100%);
+  color: var(--text-white);
+}
+
+.trades-split,
+.lounge-grid,
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px;
+  align-items: center;
+}
+
+.trades-image-panel,
+.lounge-panel {
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, rgba(14, 27, 46, 0.96), rgba(4, 10, 18, 0.99));
+  border: 1px solid rgba(67, 94, 126, 0.8);
+  border-radius: 16px;
+  box-shadow:
+    0 24px 56px rgba(0, 0, 0, 0.22),
+    0 0 32px rgba(22, 119, 255, 0.11);
+}
+
+.trades-levels-image {
+  width: 100%;
+  height: auto;
+}
+
+.trades-copy h2 {
+  color: var(--blue);
+}
+
+.trades-levels-section .trades-copy .eyebrow {
+  color: #f2f6fb;
+}
+
+.trades-levels-section .trades-copy h2 {
+  color: var(--blue-bright);
+}
+
+.trades-levels-section .trades-copy p,
+.trades-flow-section .section-heading p,
+.trades-dark-note {
+  color: var(--text-light);
+}
+
+.trades-check-list,
+.pricing-list {
+  list-style: none;
+}
+
+.trades-check-list {
+  display: grid;
+  gap: 9px;
+  margin: 20px 0 0;
+}
+
+.trades-check-list li {
+  color: inherit;
+  line-height: 1.58;
+}
+
+.trades-check-list li::before,
+.pricing-list li::before {
+  content: "\2713";
+  margin-right: 9px;
+  color: var(--blue);
+  font-weight: 900;
+}
+
+.trades-levels-section .trades-check-list li {
+  color: #e2e8ef;
+}
+
+.trades-callout {
+  display: inline-flex;
+  margin-top: 24px;
+  padding: 10px 14px;
+  color: var(--text-white) !important;
+  background: rgba(22, 119, 255, 0.12);
+  border: 1px solid rgba(46, 140, 255, 0.32);
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.strategy-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.strategy-card {
+  position: relative;
+  padding: 28px;
+  overflow: hidden;
+  border-top: 3px solid var(--blue);
+}
+
+.strategy-card-signature {
+  border-top-color: var(--orange);
+}
+
+.strategy-ribbon {
+  position: absolute;
+  top: 14px;
+  right: -36px;
+  padding: 6px 38px;
+  background: linear-gradient(135deg, var(--orange), #ea580c);
+  color: var(--text-white);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transform: rotate(16deg);
+}
+
+.trades-flow-section,
+.trades-final-cta {
+  background:
+    radial-gradient(circle at center, rgba(19, 76, 177, 0.16), transparent 48%),
+    #07111f;
+  color: var(--text-white);
+}
+
+.trade-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.trade-flow-step {
+  position: relative;
+  padding: 22px 20px;
+  background: rgba(10, 21, 36, 0.74);
+  border: 1px solid rgba(46, 140, 255, 0.18);
+  border-radius: 12px;
+}
+
+.trade-flow-step:not(:last-child)::after {
+  content: "\2192";
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  z-index: 2;
+  color: var(--orange);
+  font-weight: 900;
+  transform: translateY(-50%);
+}
+
+.trade-flow-step span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--blue-bright);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.trade-flow-step p {
+  color: #c9d3df;
+  font-size: 0.95rem;
+  line-height: 1.58;
+}
+
+.trades-dark-note {
+  max-width: 760px;
+  margin: 24px auto 0;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.lounge-panel {
+  padding: 20px;
+}
+
+.lounge-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 16px;
+  color: #e6eef9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lounge-panel-header span {
+  width: 12px;
+  height: 12px;
+  background: var(--blue);
+  border-radius: 999px;
+  box-shadow: 18px 0 0 rgba(245, 158, 11, 0.9), 36px 0 0 rgba(var(--green-rgb), 0.9);
+}
+
+.lounge-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.lounge-items span {
+  padding: 13px 14px;
+  color: #e6eef9;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.trades-note {
+  color: var(--blue-dark);
+  font-weight: 800;
+}
+
+.trades-results-section {
+  padding-bottom: 58px;
+}
+
+.trades-center-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.fit-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.fit-card {
+  padding: 30px;
+}
+
+.fit-card .trades-check-list li::before {
+  color: var(--blue);
+}
+
+.fit-card-muted {
+  background: #f9fafb;
+}
+
+.fit-card-muted .trades-check-list li::before {
+  content: "\2013";
+  color: #8a98a8;
+}
+
+.pricing-grid {
+  align-items: start;
+}
+
+.pricing-card {
+  padding: 30px;
+  color: var(--text-dark);
+}
+
+.pricing-price {
+  color: var(--blue-dark);
+  font-size: clamp(2.2rem, 4vw, 3.25rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.pricing-price span {
+  color: var(--text-mid);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.pricing-list {
+  display: grid;
+  gap: 9px;
+  margin: 24px 0;
+}
+
+.pricing-button {
+  width: 100%;
+}
+
+.pricing-card p {
+  margin-top: 14px;
+  color: var(--text-mid);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.trades-final-cta .section-heading {
+  margin-bottom: 0;
+}
+
+.trades-final-cta h2 {
+  color: var(--text-white);
+  font-size: clamp(2rem, 3.3vw, 3rem);
+}
+
+.trades-final-buttons {
+  justify-content: center;
 }
 
 .footer-links {
@@ -1292,6 +1780,14 @@ p {
     border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   }
 
+  .benefit-card:nth-child(2) {
+    border-right: 0;
+  }
+
+  .benefit-card:nth-child(n + 3) {
+    border-bottom: 0;
+  }
+
   .metrics-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1311,6 +1807,35 @@ p {
 
   .faq-columns {
     gap: 32px;
+  }
+
+  .trades-hero-grid,
+  .trades-split,
+  .lounge-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trades-hero-grid {
+    min-height: auto;
+    gap: 44px;
+    padding-top: 58px;
+  }
+
+  .trades-preview-frame {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .trades-day-grid,
+  .strategy-grid,
+  .trade-flow,
+  .fit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .trade-flow-step:nth-child(2)::after {
+    display: none;
   }
 
   .footer-grid {
@@ -1429,25 +1954,33 @@ p {
 
   .product-grid,
   .benefit-grid,
-  .metrics-grid,
   .footer-grid {
     grid-template-columns: 1fr;
   }
 
+  .difference-section {
+    padding-top: 44px;
+    padding-bottom: 42px;
+  }
+
   .signature-ribbon {
     position: static;
-    margin: 0 auto 18px;
+    margin: 0 auto 14px;
     transform: rotate(-8deg);
   }
 
   .performance-heading {
-    margin-bottom: 26px;
+    margin-bottom: 16px;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .performance-detail-strip {
     grid-template-columns: 1fr;
-    gap: 12px;
-    margin-top: 16px;
+    gap: 8px;
+    margin-top: 12px;
   }
 
   .product-card {
@@ -1461,6 +1994,10 @@ p {
 
   .benefit-card {
     border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .benefit-card:nth-child(n + 3) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   }
 
@@ -1493,6 +2030,48 @@ p {
 
   .faq-columns .faq-list + .faq-list {
     border-top: 0;
+  }
+
+  .trades-hero-grid {
+    padding-top: 48px;
+    padding-bottom: 54px;
+  }
+
+  .trades-hero-content h1 {
+    font-size: clamp(2.65rem, 12vw, 3.5rem);
+  }
+
+  .trades-day-grid,
+  .strategy-grid,
+  .trade-flow,
+  .fit-grid,
+  .lounge-items {
+    grid-template-columns: 1fr;
+  }
+
+  .trades-split,
+  .lounge-grid,
+  .pricing-grid {
+    gap: 34px;
+  }
+
+  .trade-flow-step::after {
+    display: none;
+  }
+
+  .trades-process-card,
+  .strategy-card,
+  .fit-card,
+  .pricing-card {
+    padding: 24px;
+  }
+
+  .trades-final-buttons {
+    flex-direction: column;
+  }
+
+  .trades-final-buttons .button {
+    width: 100%;
   }
 
   .temporary-photo {
