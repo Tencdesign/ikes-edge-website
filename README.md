@@ -23,17 +23,21 @@ The current version includes:
 - a V1 static-site baseline covering homepage, product pages, resources, performance reporting, and legal/policy pages
 - enhanced Ike's Edge logo placement in the header and footer
 - standardized header navigation across all public pages
-- a hero preview built around the Daily Dealer Levels image
+- rotating homepage, Ike's Trades, and Stock Picks hero feature panels with manual indicators
 - improved hero readability with a subtle educational-use notice near the primary CTA area
 - standardized two-line heading hierarchy across the major homepage sections
 - refined "Choose Your Edge" spacing, typography hierarchy, and wider product-card layout
+- homepage Membership Options cards with visible pricing and 7-day free trial messaging
 - centered membership buttons and stronger product-card copy readability
+- a compact three-pillar homepage difference panel focused on experience, community, and transparency
+- a homepage community section that explains Ike's Edge lounges without fake chat content or testimonials
+- a homepage transparency section with process visibility bullets and the verified Crumbs+1 July 2026 snapshot
 - refined dark and light section panels for stronger readability and visual consistency
 - a real Daily Brief product image in the Experience section instead of a mock trading graphic
-- a dedicated flagship Ike's Trades detail page with trading-day flow, strategy coverage, Trading Lounge context, membership pricing, FAQ content, and Whop calls to action
-- a dedicated Stock Picks detail page with organized watchlists, live portfolios, Dividend Portfolio updates, stock alerts, membership pricing, and FAQ content
+- a dedicated flagship Ike's Trades detail page with rotating feature panels, early pricing visibility, trading-day flow, strategy coverage, Trading Lounge context, membership pricing, FAQ content, and Whop calls to action
+- a dedicated Stock Picks detail page with rotating feature panels, early pricing visibility, organized watchlists, live portfolios, Dividend Portfolio updates, stock alerts, membership pricing, and FAQ content
 - a dedicated Performance detail page with documented Crumbs+1 July 2026 results, methodology, strategy context, disclosures, and future-reporting placeholders
-- a dedicated Resources landing page that previews member tools, Daily Dealer Levels, market prep, alerts, watchlists, portfolio updates, community access, and performance tracking
+- a dedicated Resources landing page that previews member tools, Daily Dealer Levels, market prep, a "Don't Trade Alone" community access panel, alerts, watchlists, portfolio updates, and performance tracking
 - dedicated Terms & Conditions, Privacy Policy, and Disclosures pages with reusable legal-page layout styles and shared footer links
 - a July 2026 Crumbs+1 performance spotlight with documented monthly results and strategy details
 - an in-section Ike profile portrait in the About section

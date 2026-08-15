@@ -120,14 +120,74 @@
 
         <div class="hero-visual">
 
-          <div class="dashboard-card dealer-preview-frame">
-            <span class="preview-badge">Daily Dealer Levels</span>
-            <span class="preview-badge preview-badge-secondary">Member Preview</span>
-            <img
-              src="images/ikes-dealer-levels-preview.png"
-              alt="Ike's Edge Dealer Levels preview"
-              class="dealer-preview-image"
-            />
+          <div
+            class="rotating-hero-card"
+            data-rotating-panels
+            data-rotation-interval="4000"
+            aria-label="Featured Ike's Edge previews"
+          >
+            <div class="rotating-panel-track">
+              <article class="rotating-panel is-active" data-panel>
+                <div class="panel-copy">
+                  <span class="panel-kicker">Member Preview</span>
+                  <h2>Daily Dealer Levels</h2>
+                  <p>See the market structure before the trade.</p>
+                </div>
+
+                <div class="panel-image-frame dealer-preview-frame">
+                  <img
+                    src="images/ikes-dealer-levels-preview.png"
+                    alt="Ike's Edge Dealer Levels preview"
+                    class="dealer-preview-image"
+                  />
+                </div>
+              </article>
+
+              <article class="rotating-panel" data-panel>
+                <div class="panel-copy">
+                  <span class="panel-kicker">7-Day Free Trial</span>
+                  <h2>Try Ike's Edge Free for 7 Days</h2>
+                  <p>Explore the community, resources, and trade ideas before you decide.</p>
+                </div>
+
+                <div class="promo-panel-card">
+                  <span>Start Free Trial</span>
+                  <a
+                    href="https://www.whop.com/ikesedge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Start Ike's Edge free trial on Whop"
+                  >
+                    Start Free Trial
+                  </a>
+                </div>
+              </article>
+
+              <article class="rotating-panel" data-panel>
+                <div class="panel-copy">
+                  <span class="panel-kicker">Our Signature Trade</span>
+                  <h2>Crumbs+1 &mdash; Our Signature SPX Trade</h2>
+                  <p>Defined structure. Documented process. Risk-managed execution.</p>
+                </div>
+
+                <div class="performance-mini-card">
+                  <div><strong>17</strong><span>Trades</span></div>
+                  <div><strong>17 / 17</strong><span>Winners</span></div>
+                  <div><strong>$2,585</strong><span>Total P&amp;L</span></div>
+                  <div><strong>July 2026</strong><span>Closed Trades</span></div>
+                </div>
+
+                <p class="panel-disclosure">
+                  Past performance does not guarantee future results. Educational purposes only.
+                </p>
+              </article>
+            </div>
+
+            <div class="rotating-panel-indicators" aria-label="Select featured preview">
+              <button type="button" class="is-active" data-panel-indicator aria-label="Show Daily Dealer Levels"></button>
+              <button type="button" data-panel-indicator aria-label="Show 7-Day Free Trial"></button>
+              <button type="button" data-panel-indicator aria-label="Show Crumbs+1 Signature Trade"></button>
+            </div>
           </div>
 
         </div>
@@ -180,6 +240,14 @@
               <li>Ike's Trading Lounge</li>
             </ul>
 
+            <div class="product-card-pricing product-card-pricing-blue">
+              <div class="product-card-pricing-top">
+                <div class="product-card-price">$149.99 <span>/ month</span></div>
+                <span class="product-card-trial">7-Day Free Trial</span>
+              </div>
+              <p>Membership managed through Whop.</p>
+            </div>
+
             <a
               href="https://whop.com/joined/ikesedge/products/ikes-trades/"
               class="button product-card-button"
@@ -215,6 +283,14 @@
               <li>Stock Picks Lounge</li>
             </ul>
 
+            <div class="product-card-pricing product-card-pricing-green">
+              <div class="product-card-pricing-top">
+                <div class="product-card-price">$49.99 <span>/ month</span></div>
+                <span class="product-card-trial">7-Day Free Trial</span>
+              </div>
+              <p>Membership managed through Whop.</p>
+            </div>
+
             <a
               href="https://whop.com/joined/ikesedge/products/stockpicks/"
               class="button button-green product-card-button"
@@ -247,42 +323,29 @@
         </div>
 
 
-        <div class="benefit-grid">
+        <div class="benefit-grid difference-pillar-grid">
 
-          <div class="benefit-card">
-            <div class="benefit-icon benefit-icon-orange">&#9889;</div>
+          <div class="benefit-card difference-pillar">
+            <div class="benefit-icon benefit-icon-blue" aria-hidden="true">
+              <svg class="benefit-icon-svg" viewBox="0 0 32 32" focusable="false">
+                <path d="M5 22c4-7 8-10 11-10s7 3 11 10" />
+                <circle cx="16" cy="22" r="3.5" />
+                <path d="M8 9h16" />
+                <path d="M10 14h4" />
+                <path d="M18 14h4" />
+              </svg>
+            </div>
 
-            <h3>Real-Time</h3>
+            <h3>The Experience</h3>
 
             <p>
-              Trade alerts and market updates when they happen.
+              See the market through Ike's process &mdash; levels, setups,
+              alerts, adjustments, and outcomes.
             </p>
           </div>
 
 
-          <div class="benefit-card">
-            <div class="benefit-icon benefit-icon-green">&#10003;</div>
-
-            <h3>Transparent</h3>
-
-            <p>
-              Trades and portfolios are tracked so members can see the results.
-            </p>
-          </div>
-
-
-          <div class="benefit-card">
-            <div class="benefit-icon benefit-icon-orange">&#9678;</div>
-
-            <h3>Practical</h3>
-
-            <p>
-              Clear market levels, setups, and trade ideas without unnecessary noise.
-            </p>
-          </div>
-
-
-          <div class="benefit-card">
+          <div class="benefit-card difference-pillar">
             <div class="benefit-icon benefit-icon-orange" aria-hidden="true">
               <svg class="benefit-icon-svg" viewBox="0 0 32 32" focusable="false">
                 <circle cx="16" cy="10" r="4" />
@@ -297,7 +360,28 @@
             <h3>Community</h3>
 
             <p>
-              Connect with Ike and other traders inside the Ike's Edge lounges.
+              Don't trade alone. Stay connected to the conversation, context,
+              and member discussion.
+            </p>
+          </div>
+
+
+          <div class="benefit-card difference-pillar">
+            <div class="benefit-icon benefit-icon-blue" aria-hidden="true">
+              <svg class="benefit-icon-svg" viewBox="0 0 32 32" focusable="false">
+                <path d="M9 4h11l4 4v20H9z" />
+                <path d="M20 4v5h5" />
+                <path d="M13 15h8" />
+                <path d="M13 20h5" />
+                <path d="M12 25l2 2 5-6" />
+              </svg>
+            </div>
+
+            <h3>Transparent</h3>
+
+            <p>
+              Review posted trade plans, tracking sheets, performance
+              snapshots, and documented outcomes.
             </p>
           </div>
 
@@ -391,87 +475,150 @@
     </section>
 
 
+    <!-- =========================
+         COMMUNITY
+    ========================== -->
+    <section class="section community-section">
+
+      <div class="container community-home-grid">
+
+        <div class="community-home-content section-heading-pair section-heading-pair-dark section-heading-pair-inline">
+
+          <span class="eyebrow">COMMUNITY</span>
+
+          <h2>Don't Trade Alone.</h2>
+
+          <p class="community-subheading">
+            Stay connected to the market, the process, and the community.
+          </p>
+
+          <p>
+            Inside Ike's Edge, members can follow market commentary, trade
+            alerts, stock ideas, portfolio updates, and community discussion in
+            one organized place. The goal is not just to see a trade &mdash;
+            it's to understand the process around it.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="ikes-trades.html" class="button">
+              Explore Ike's Trades
+            </a>
+
+            <a href="stock-picks.html" class="button button-green">
+              Explore Stock Picks
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="community-mockup-panel" aria-label="Ike's Edge community areas">
+          <div class="community-mockup-header">
+            <span class="community-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <circle cx="16" cy="10" r="4" />
+                <circle cx="8" cy="13" r="3.2" />
+                <circle cx="24" cy="13" r="3.2" />
+                <path d="M9 25c0-4.5 2.8-7.4 7-7.4s7 2.9 7 7.4" />
+                <path d="M2.8 24c0-3.3 2.2-5.5 5.5-5.5" />
+                <path d="M23.7 18.5c3.3 0 5.5 2.2 5.5 5.5" />
+              </svg>
+            </span>
+            <strong>Ike's Edge Community</strong>
+          </div>
+
+          <div class="community-mockup-list">
+            <span class="community-mockup-blue">Market Commentary</span>
+            <span class="community-mockup-blue">Trade Alerts</span>
+            <span class="community-mockup-orange">Member Discussion</span>
+            <span class="community-mockup-green">Stock Ideas</span>
+            <span class="community-mockup-orange">Performance Updates</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
 
     <!-- =========================
-         RESULTS
+         TRANSPARENCY
     ========================== -->
-    <section class="section results-section" id="results">
+    <section class="section transparency-section" id="results">
 
       <div class="container">
 
-        <div class="signature-ribbon">OUR SIGNATURE TRADE</div>
+        <div class="transparency-grid">
 
-        <div class="section-heading section-heading-pair section-heading-pair-dark performance-heading">
+          <div class="transparency-copy section-heading-pair section-heading-pair-dark section-heading-pair-inline">
 
-          <span class="eyebrow">PERFORMANCE</span>
+            <span class="eyebrow">TRANSPARENT</span>
 
-          <h2>Crumbs+1 &mdash; July 2026</h2>
+            <h2>See the Plans. Track the Process. Review the Results.</h2>
 
-          <p>
-            Our signature SPX trade delivered a perfect July &mdash; 17 closed trades, 17 winners.
-          </p>
+            <p>
+              Ike's Edge is built around visibility. Members can review posted
+              trade plans, follow trade tracking, access daily market context,
+              and see documented outcomes when performance summaries are
+              verified and approved.
+            </p>
+
+            <div class="transparency-list-panel">
+              <h3>Transparency means members can see:</h3>
+
+              <ul class="transparency-list">
+                <li>Posted trade plans</li>
+                <li>Posted trade tracking sheets</li>
+                <li>Daily Brief library</li>
+                <li>Documented trade outcomes</li>
+                <li>Performance snapshots with context</li>
+                <li>Strategy details and date ranges</li>
+                <li>Educational disclosures around results</li>
+                <li>Ongoing updates when trades are managed</li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <aside class="transparency-snapshot" aria-label="Crumbs+1 July 2026 performance snapshot">
+            <span class="snapshot-label">Verified Snapshot</span>
+
+            <h3>Crumbs+1 July 2026 Snapshot</h3>
+
+            <div class="transparency-snapshot-metrics">
+              <div>
+                <strong>17</strong>
+                <span>Trades</span>
+              </div>
+
+              <div>
+                <strong>17 / 17</strong>
+                <span>Winners</span>
+              </div>
+
+              <div>
+                <strong>$2,585</strong>
+                <span>Total P&amp;L</span>
+              </div>
+
+              <div>
+                <strong>July 2&ndash;30, 2026</strong>
+                <span>Date Range</span>
+              </div>
+            </div>
+
+            <a href="performance.html" class="button button-outline-light">
+              View Performance
+            </a>
+
+            <p class="performance-disclosure">
+              July 2026 closed trades. Past performance does not guarantee
+              future results. For educational purposes only.
+            </p>
+          </aside>
 
         </div>
-
-
-        <div class="metrics-grid">
-
-          <div class="metric-card">
-            <span class="performance-icon" aria-hidden="true">&#8599;</span>
-            <span class="metric-value">17</span>
-            <span class="metric-label">Trades</span>
-          </div>
-
-          <div class="metric-card">
-            <span class="performance-icon" aria-hidden="true">&#10003;</span>
-            <span class="metric-value">17 / 17</span>
-            <span class="metric-label">Winners</span>
-          </div>
-
-          <div class="metric-card">
-            <span class="performance-icon" aria-hidden="true">%</span>
-            <span class="metric-value">100%</span>
-            <span class="metric-label">Win Rate</span>
-          </div>
-
-          <div class="metric-card">
-            <span class="performance-icon" aria-hidden="true">$</span>
-            <span class="metric-value">$2,585</span>
-            <span class="metric-label">Total P&amp;L</span>
-          </div>
-
-        </div>
-
-        <div class="performance-detail-strip">
-          <div class="performance-detail-item">
-            <span class="performance-icon performance-icon-small" aria-hidden="true">&#9638;</span>
-            <span class="performance-detail-label">Date Range</span>
-            <span class="performance-detail-value">July 2&ndash;30, 2026</span>
-          </div>
-          <div class="performance-detail-item">
-            <span class="performance-icon performance-icon-small" aria-hidden="true">&#9636;</span>
-            <span class="performance-detail-label">Avg. Contracts</span>
-            <span class="performance-detail-value">5.35</span>
-          </div>
-          <div class="performance-detail-item">
-            <span class="performance-icon performance-icon-small" aria-hidden="true">&#9711;</span>
-            <span class="performance-detail-label">Avg. Days Held</span>
-            <span class="performance-detail-value">1.06 Days</span>
-          </div>
-          <div class="performance-detail-item">
-            <span class="performance-icon performance-icon-small" aria-hidden="true">&#9678;</span>
-            <span class="performance-detail-label">Strategy</span>
-            <span class="performance-detail-value">Iron Condor &mdash; SPX Weeklys</span>
-          </div>
-        </div>
-
-        <p class="performance-statement">
-          A Perfect Month &mdash; 17 trades. 17 winners. $2,585 total profit.
-        </p>
-
-        <p class="performance-disclosure">
-          July 2026 closed trades. Past performance does not guarantee future results. For educational purposes only.
-        </p>
 
       </div>
     </section>

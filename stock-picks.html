@@ -49,22 +49,105 @@
           <p class="hero-disclaimer">For educational purposes only. Not investment or trade recommendations.</p>
         </div>
 
-        <div class="stock-hero-visual" aria-label="Example stock watchlist layout">
-          <div class="stock-dashboard">
-            <div class="stock-dashboard-bar"><span></span><strong>Stock Picks Workspace</strong><small>Member view</small></div>
-            <div class="stock-dashboard-summary">
-              <div><small>WATCHLIST</small><strong>Organized ideas</strong></div>
-              <div><small>PORTFOLIO</small><strong>Ongoing context</strong></div>
+        <div class="stock-hero-visual">
+          <div
+            class="rotating-hero-card stock-rotating-card"
+            data-rotating-panels
+            data-rotation-interval="4000"
+            aria-label="Stock Picks feature previews"
+          >
+            <div class="rotating-panel-track">
+              <article class="rotating-panel is-active" data-panel>
+                <div class="panel-copy">
+                  <span class="panel-kicker">Member View</span>
+                  <h2>Daily Watchlist</h2>
+                  <p>Stock ideas Ike is watching, organized by category.</p>
+                </div>
+
+                <div class="portfolio-preview-card" aria-label="Watchlist categories">
+                  <span>Momentum Watch</span>
+                  <span>Portfolio Context</span>
+                  <span>Income Ideas</span>
+                  <span>Status Updates</span>
+                </div>
+              </article>
+
+              <article class="rotating-panel" data-panel>
+                <div class="panel-copy">
+                  <span class="panel-kicker">Momentum</span>
+                  <h2>Hot Stocks Momentum</h2>
+                  <p>Higher-momentum stock ideas with ongoing context.</p>
+                </div>
+
+                <div class="portfolio-preview-card portfolio-preview-card-momentum" aria-label="Momentum idea workflow">
+                  <span>Watch</span>
+                  <span>Evaluate</span>
+                  <span>Update</span>
+                  <span>Track</span>
+                </div>
+              </article>
+
+              <article class="rotating-panel" data-panel>
+                <div class="panel-copy">
+                  <span class="panel-kicker">Income Focus</span>
+                  <h2>Dividend Portfolio</h2>
+                  <p>Dividend-focused ideas and portfolio updates built around income and longer-term positioning.</p>
+                </div>
+
+                <div class="portfolio-preview-card portfolio-preview-card-income" aria-label="Dividend portfolio themes">
+                  <span>Income</span>
+                  <span>Positioning</span>
+                  <span>Updates</span>
+                  <span>Longer Term</span>
+                </div>
+              </article>
+
+              <article class="rotating-panel" data-panel>
+                <div class="panel-copy">
+                  <span class="panel-kicker">Options Income</span>
+                  <h2>Small-Cap Covered Calls</h2>
+                  <p>Covered-call opportunities when available.</p>
+                </div>
+
+                <div class="portfolio-preview-card portfolio-preview-card-covered" aria-label="Covered call process">
+                  <span>Opportunity</span>
+                  <span>Premium</span>
+                  <span>Risk Context</span>
+                  <span>Availability</span>
+                </div>
+              </article>
             </div>
-            <div class="stock-table">
-              <div class="stock-table-head"><span>TICKER</span><span>SETUP</span><span>STATUS</span><span>NOTES</span></div>
-              <div class="stock-table-row"><strong>AAPL</strong><span>Watchlist</span><span class="status-monitoring">Monitoring</span><small>Example only</small></div>
-              <div class="stock-table-row"><strong>MSFT</strong><span>Portfolio</span><span class="status-active">Active</span><small>Example only</small></div>
-              <div class="stock-table-row"><strong>NVDA</strong><span>Watchlist</span><span class="status-monitoring">Watching</span><small>Example only</small></div>
+
+            <div class="rotating-panel-indicators" aria-label="Select Stock Picks feature">
+              <button type="button" class="is-active" data-panel-indicator aria-label="Show Daily Watchlist"></button>
+              <button type="button" data-panel-indicator aria-label="Show Hot Stocks Momentum"></button>
+              <button type="button" data-panel-indicator aria-label="Show Dividend Portfolio"></button>
+              <button type="button" data-panel-indicator aria-label="Show Small-Cap Covered Calls"></button>
             </div>
-            <p class="stock-example-note">Example layout - not current recommendations</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="early-pricing-strip early-pricing-strip-green" aria-label="Stock Picks pricing">
+      <div class="container early-pricing-inner">
+        <div>
+          <span class="early-pricing-label">Stock Picks</span>
+          <strong>$49.99 <span>/ month</span></strong>
+        </div>
+
+        <div class="early-pricing-trial">7-Day Free Trial</div>
+
+        <a
+          href="https://whop.com/joined/ikesedge/products/stockpicks/"
+          class="button button-green"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join Stock Picks
+        </a>
+
+        <p>Membership and billing are managed through Whop.</p>
       </div>
     </section>
 

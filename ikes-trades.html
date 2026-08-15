@@ -106,16 +106,113 @@
         </div>
 
         <div class="trades-hero-visual">
-          <div class="dashboard-card dealer-preview-frame trades-preview-frame">
-            <span class="preview-badge">Daily Dealer Levels</span>
-            <span class="preview-badge preview-badge-secondary">Member Prep</span>
-            <img
-              src="images/ikes-dealer-levels-preview.png"
-              alt="Ike's Edge Daily Dealer Levels preview"
-              class="dealer-preview-image"
-            />
+          <div
+            class="rotating-hero-card trades-rotating-card"
+            data-rotating-panels
+            data-rotation-interval="4000"
+            aria-label="Ike's Trades feature previews"
+          >
+            <div class="rotating-panel-track">
+              <article class="rotating-panel is-active" data-panel>
+                <div class="panel-copy">
+                  <span class="panel-kicker">Member Prep</span>
+                  <h2>Daily Dealer Levels</h2>
+                  <p>Know the structure before the trade.</p>
+                </div>
+
+                <div class="panel-image-frame dealer-preview-frame">
+                  <img
+                    src="images/ikes-dealer-levels-preview.png"
+                    alt="Ike's Edge Daily Dealer Levels preview"
+                    class="dealer-preview-image"
+                  />
+                </div>
+              </article>
+
+              <article class="rotating-panel" data-panel>
+                <div class="panel-copy">
+                  <span class="panel-kicker">Strategy Suite</span>
+                  <h2>Our Trades</h2>
+                  <p>Crumbs+1, 0DTE Crumbs, Calendars, Debit Spreads, and Credit Spreads.</p>
+                </div>
+
+                <div class="strategy-tile-stack" aria-label="Ike's Trades strategy list">
+                  <span>Crumbs+1</span>
+                  <span>0DTE Crumbs</span>
+                  <span>Calendars</span>
+                  <span>Debit Spreads</span>
+                  <span>Credit Spreads</span>
+                </div>
+              </article>
+
+              <article class="rotating-panel" data-panel>
+                <div class="panel-copy">
+                  <span class="panel-kicker">Pin Risk</span>
+                  <h2>Nobody Does the Pin Like Ike</h2>
+                  <p>Market structure, key levels, and pin risk viewed through Ike's daily process.</p>
+                </div>
+
+                <div class="pin-graphic" aria-hidden="true">
+                  <span class="pin-ring pin-ring-outer"></span>
+                  <span class="pin-ring pin-ring-middle"></span>
+                  <span class="pin-ring pin-ring-inner"></span>
+                  <span class="pin-line pin-line-vertical"></span>
+                  <span class="pin-line pin-line-horizontal"></span>
+                  <strong>PIN</strong>
+                </div>
+              </article>
+
+              <article class="rotating-panel" data-panel>
+                <div class="panel-copy">
+                  <span class="panel-kicker">7-Day Free Trial</span>
+                  <h2>Try Ike's Trades Free for 7 Days</h2>
+                  <p>See the levels, alerts, and trade management before you decide.</p>
+                </div>
+
+                <div class="promo-panel-card">
+                  <span>Start Free Trial</span>
+                  <a
+                    href="https://whop.com/joined/ikesedge/products/ikes-trades/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Start Ike's Trades free trial on Whop"
+                  >
+                    Start Free Trial
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="rotating-panel-indicators" aria-label="Select Ike's Trades feature">
+              <button type="button" class="is-active" data-panel-indicator aria-label="Show Daily Dealer Levels"></button>
+              <button type="button" data-panel-indicator aria-label="Show Our Trades"></button>
+              <button type="button" data-panel-indicator aria-label="Show Nobody Does the Pin Like Ike"></button>
+              <button type="button" data-panel-indicator aria-label="Show 7-Day Free Trial"></button>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="early-pricing-strip early-pricing-strip-blue" aria-label="Ike's Trades pricing">
+      <div class="container early-pricing-inner">
+        <div>
+          <span class="early-pricing-label">Ike's Trades</span>
+          <strong>$149.99 <span>/ month</span></strong>
+        </div>
+
+        <div class="early-pricing-trial">7-Day Free Trial</div>
+
+        <a
+          href="https://whop.com/joined/ikesedge/products/ikes-trades/"
+          class="button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join Ike's Trades
+        </a>
+
+        <p>Membership and billing are managed through Whop.</p>
       </div>
     </section>
 
