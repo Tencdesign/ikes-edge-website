@@ -38,7 +38,7 @@ The current version includes:
 - a dedicated Stock Picks detail page with rotating feature panels, early pricing visibility, organized watchlists, live portfolios, Dividend Portfolio updates, stock alerts, membership pricing, and FAQ content
 - a dedicated Performance detail page with documented Crumbs+1 July 2026 results, a reporting framework hero, methodology, portfolio and strategy tracking dashboards, strategy context, and disclosures
 - a dedicated Resources landing page that previews member tools, Daily Dealer Levels, market prep, a "Don't Trade Alone" community access panel, alerts, watchlists, portfolio updates, and performance tracking
-- dedicated Terms & Conditions, Privacy Policy, and Disclosures pages with reusable legal-page layout styles and shared footer links
+- dedicated Terms & Conditions, Privacy Policy, and Disclosures pages with reusable legal-page layout styles, standardized effective/last-updated callout boxes, and shared footer links
 - a July 2026 Crumbs+1 performance spotlight with documented monthly results and strategy details
 - an in-section Ike profile portrait in the About section
 - direct Whop membership links for both Ike's Trades and Stock Picks
