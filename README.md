@@ -36,7 +36,7 @@ The current version includes:
 - a real Daily Brief product image in the Experience section instead of a mock trading graphic
 - a dedicated flagship Ike's Trades detail page with rotating feature panels, early pricing visibility, trading-day flow, strategy coverage, Trading Lounge context, membership pricing, FAQ content, and Whop calls to action
 - a dedicated Stock Picks detail page with rotating feature panels, early pricing visibility, organized watchlists, live portfolios, Dividend Portfolio updates, stock alerts, membership pricing, and FAQ content
-- a dedicated Performance detail page with documented Crumbs+1 July 2026 results, methodology, strategy context, disclosures, and future-reporting placeholders
+- a dedicated Performance detail page with documented Crumbs+1 July 2026 results, a reporting framework hero, methodology, portfolio and strategy tracking dashboards, strategy context, and disclosures
 - a dedicated Resources landing page that previews member tools, Daily Dealer Levels, market prep, a "Don't Trade Alone" community access panel, alerts, watchlists, portfolio updates, and performance tracking
 - dedicated Terms & Conditions, Privacy Policy, and Disclosures pages with reusable legal-page layout styles and shared footer links
 - a July 2026 Crumbs+1 performance spotlight with documented monthly results and strategy details
@@ -52,6 +52,10 @@ The `images/` directory currently includes branded and preview imagery used by t
 - `ikes-edge-logo-header.png`
 - `ikes-edge-logo.png`
 - `ikes-dealer-levels-preview.png`
+- `performance-dashboard-summary.png`
+- `performance-dashboard-calendars.png`
+- `performance-dashboard-stocks.png`
+- `performance-dashboard-swing-trades.png`
 - `Daily Brief Image.png`
 - `Ike-Profile.jpeg`
 - `Ike-Oval-Version.jpeg`
