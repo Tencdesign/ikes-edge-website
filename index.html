@@ -127,7 +127,7 @@
             aria-label="Featured Ike's Edge previews"
           >
             <div class="rotating-panel-track">
-              <article class="rotating-panel is-active" data-panel>
+              <article class="rotating-panel is-active" data-panel data-duration="3000">
                 <div class="panel-copy">
                   <span class="panel-kicker">Member Preview</span>
                   <h2>Daily Dealer Levels</h2>
@@ -143,27 +143,76 @@
                 </div>
               </article>
 
-              <article class="rotating-panel" data-panel>
+              <article class="rotating-panel trial-preview-panel" data-panel data-duration="5000">
                 <div class="panel-copy">
                   <span class="panel-kicker">7-Day Free Trial</span>
-                  <h2>Try Ike's Edge Free for 7 Days</h2>
-                  <p>Explore the community, resources, and trade ideas before you decide.</p>
+                  <h2>7 Days Inside<br /><span>Ike's Edge</span></h2>
+                  <p>See the market prep, trade alerts, daily brief, and member resources for yourself.</p>
                 </div>
 
-                <div class="promo-panel-card">
-                  <span>Start Free Trial</span>
+                <div class="trial-panel-card">
+                  <img
+                    src="images/ikes-edge-logo.png"
+                    alt=""
+                    class="trial-panel-watermark"
+                    aria-hidden="true"
+                  />
+
+                  <div class="trial-feature-grid">
+                    <article class="trial-feature-tile">
+                      <span class="trial-feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false"><path d="M7 3h7l3 3v15H7z" /><path d="M14 3v4h4" /><path d="M10 11h5" /><path d="M10 15h5" /></svg>
+                      </span>
+                      <div>
+                        <strong>Daily Brief</strong>
+                        <p>Start each day with market insights and key levels.</p>
+                      </div>
+                    </article>
+
+                    <article class="trial-feature-tile">
+                      <span class="trial-feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false"><path d="M12 4c-2.8 0-5 2.2-5 5v3.4L5.5 15h13L17 12.4V9c0-2.8-2.2-5-5-5z" /><path d="M10 18h4" /><path d="M13 2l-2 4" /></svg>
+                      </span>
+                      <div>
+                        <strong>Trade Alerts</strong>
+                        <p>Real-time ideas and updates when it matters.</p>
+                      </div>
+                    </article>
+
+                    <article class="trial-feature-tile">
+                      <span class="trial-feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="8" r="3" /><path d="M6 20c0-3.4 2.4-5.6 6-5.6s6 2.2 6 5.6" /><circle cx="5.5" cy="10" r="2.3" /><circle cx="18.5" cy="10" r="2.3" /></svg>
+                      </span>
+                      <div>
+                        <strong>Community</strong>
+                        <p>Connect, discuss, and learn with active traders.</p>
+                      </div>
+                    </article>
+
+                    <article class="trial-feature-tile">
+                      <span class="trial-feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false"><path d="M3 7h7l2 2h9v10H3z" /><path d="M3 7v12" /><path d="M7 13h10" /></svg>
+                      </span>
+                      <div>
+                        <strong>Resource Library</strong>
+                        <p>Guides, tools, and education at your fingertips.</p>
+                      </div>
+                    </article>
+                  </div>
+
                   <a
                     href="https://www.whop.com/ikesedge"
+                    class="trial-panel-cta"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Start Ike's Edge free trial on Whop"
                   >
-                    Start Free Trial
+                    Start Free Trial &rarr;
                   </a>
                 </div>
               </article>
 
-              <article class="rotating-panel" data-panel>
+              <article class="rotating-panel" data-panel data-duration="3000">
                 <div class="panel-copy">
                   <span class="panel-kicker">Our Signature Trade</span>
                   <h2>Crumbs+1 &mdash; Our Signature SPX Trade</h2>
@@ -544,13 +593,13 @@
     <!-- =========================
          TRANSPARENCY
     ========================== -->
-    <section class="section transparency-section" id="results">
+    <section class="section section-light transparency-section transparency-section-light" id="results">
 
       <div class="container">
 
         <div class="transparency-grid">
 
-          <div class="transparency-copy section-heading-pair section-heading-pair-dark section-heading-pair-inline">
+          <div class="transparency-copy section-heading-pair section-heading-pair-inline">
 
             <span class="eyebrow">TRANSPARENT</span>
 
@@ -608,7 +657,7 @@
               </div>
             </div>
 
-            <a href="performance.html" class="button button-outline-light">
+            <a href="performance.html" class="button">
               View Performance
             </a>
 
@@ -628,7 +677,7 @@
     <!-- =========================
          ABOUT IKE
     ========================== -->
-    <section class="section section-light" id="about">
+    <section class="section section-dark about-section-dark" id="about">
 
       <div class="container about-grid">
 
@@ -645,7 +694,7 @@
         </div>
 
 
-        <div class="about-content section-heading-pair section-heading-pair-inline">
+        <div class="about-content section-heading-pair section-heading-pair-dark section-heading-pair-inline">
 
           <span class="eyebrow">MEET IKE</span>
 
@@ -676,11 +725,11 @@
     <!-- =========================
          CTA
     ========================== -->
-    <section class="membership-cta" id="membership">
+    <section class="membership-cta membership-cta-light" id="membership">
 
       <div class="container membership-inner">
 
-        <div class="section-heading-pair section-heading-pair-dark section-heading-pair-inline cta-heading">
+        <div class="section-heading-pair section-heading-pair-inline cta-heading">
 
           <span class="eyebrow">JOIN IKE'S EDGE</span>
 
@@ -723,11 +772,11 @@
     <!-- =========================
          FAQ
     ========================== -->
-    <section class="section section-light" id="faq">
+    <section class="section section-dark faq-section-dark" id="faq">
 
       <div class="container faq-container">
 
-        <div class="section-heading section-heading-pair">
+        <div class="section-heading section-heading-pair section-heading-pair-dark">
 
           <span class="eyebrow">QUESTIONS</span>
 

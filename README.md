@@ -21,12 +21,17 @@ This repository contains the static marketing site for Ike's Edge, including:
 The current version includes:
 
 - a V1 static-site baseline covering homepage, product pages, resources, performance reporting, and legal/policy pages
+- V2 UAT review refinements for the homepage, Ike's Trades hero carousel, Stock Picks hero carousel, performance CTA routing, and legal-page date callouts
 - enhanced Ike's Edge logo placement in the header and footer
 - standardized header navigation across all public pages
-- rotating homepage, Ike's Trades, and Stock Picks hero feature panels with manual indicators
+- rotating homepage, Ike's Trades, and Stock Picks hero feature panels with manual indicators, hover/focus pause handling, and accessible hidden-panel behavior
+- a homepage hero trial panel with a prominent Whop CTA, per-panel carousel timing, and a redesigned 7-day free trial card
+- an Ike's Trades hero carousel using the redesigned 7-day trial card, 5-second hero-card timing, and a refreshed SPX pin-zone visual
+- a Stock Picks hero carousel with a green 7-day trial card, matching tile icons across carousel panels, and a Stock Picks-specific Whop CTA
 - improved hero readability with a subtle educational-use notice near the primary CTA area
 - standardized two-line heading hierarchy across the major homepage sections
 - refined "Choose Your Edge" spacing, typography hierarchy, and wider product-card layout
+- alternating homepage section backgrounds from the hero through FAQ for clearer panel separation
 - homepage Membership Options cards with visible pricing and 7-day free trial messaging
 - centered membership buttons and stronger product-card copy readability
 - a compact three-pillar homepage difference panel focused on experience, community, and transparency
@@ -40,6 +45,7 @@ The current version includes:
 - a dedicated Resources landing page that previews member tools, Daily Dealer Levels, market prep, a "Don't Trade Alone" community access panel, alerts, watchlists, portfolio updates, and performance tracking
 - dedicated Terms & Conditions, Privacy Policy, and Disclosures pages with reusable legal-page layout styles, standardized effective/last-updated callout boxes, and shared footer links
 - a July 2026 Crumbs+1 performance spotlight with documented monthly results and strategy details
+- an Ike's Trades performance spotlight CTA that routes to the dedicated Performance page
 - an in-section Ike profile portrait in the About section
 - direct Whop membership links for both Ike's Trades and Stock Picks
 - improved in-page navigation offsets for sticky-header section links

@@ -109,7 +109,7 @@
           <div
             class="rotating-hero-card trades-rotating-card"
             data-rotating-panels
-            data-rotation-interval="4000"
+            data-rotation-interval="5000"
             aria-label="Ike's Trades feature previews"
           >
             <div class="rotating-panel-track">
@@ -149,35 +149,98 @@
                 <div class="panel-copy">
                   <span class="panel-kicker">Pin Risk</span>
                   <h2>Nobody Does the Pin Like Ike</h2>
-                  <p>Market structure, key levels, and pin risk viewed through Ike's daily process.</p>
+                  <p>Late-day market analysis focused on identifying a potential SPX closing zone.</p>
                 </div>
 
-                <div class="pin-graphic" aria-hidden="true">
-                  <span class="pin-ring pin-ring-outer"></span>
-                  <span class="pin-ring pin-ring-middle"></span>
-                  <span class="pin-ring pin-ring-inner"></span>
-                  <span class="pin-line pin-line-vertical"></span>
-                  <span class="pin-line pin-line-horizontal"></span>
-                  <strong>PIN</strong>
+                <div class="pin-graphic" aria-label="SPX projected close zone concept">
+                  <div class="pin-chart-grid" aria-hidden="true"></div>
+                  <img
+                    src="images/ikes-edge-logo.png"
+                    alt=""
+                    class="pin-watermark"
+                    aria-hidden="true"
+                  />
+                  <div class="pin-range-line">
+                    <span class="pin-range pin-range-wide"></span>
+                    <span class="pin-range pin-range-mid"></span>
+                    <span class="pin-zone"></span>
+                    <span class="pin-marker"></span>
+                  </div>
+                  <div class="pin-zone-label">
+                    <strong>SPX PIN</strong>
+                    <span>Projected Close Zone</span>
+                  </div>
+                  <div class="pin-callout pin-callout-left">Key Levels</div>
+                  <div class="pin-callout pin-callout-top">Late-Day Read</div>
+                  <div class="pin-callout pin-callout-right">Close Target</div>
                 </div>
               </article>
 
-              <article class="rotating-panel" data-panel>
+              <article class="rotating-panel trial-preview-panel" data-panel>
                 <div class="panel-copy">
                   <span class="panel-kicker">7-Day Free Trial</span>
-                  <h2>Try Ike's Trades Free for 7 Days</h2>
-                  <p>See the levels, alerts, and trade management before you decide.</p>
+                  <h2>7 Days Inside<br /><span>Ike's Edge</span></h2>
+                  <p>See the market prep, trade alerts, daily brief, and member resources for yourself.</p>
                 </div>
 
-                <div class="promo-panel-card">
-                  <span>Start Free Trial</span>
+                <div class="trial-panel-card">
+                  <img
+                    src="images/ikes-edge-logo.png"
+                    alt=""
+                    class="trial-panel-watermark"
+                    aria-hidden="true"
+                  />
+
+                  <div class="trial-feature-grid">
+                    <article class="trial-feature-tile">
+                      <span class="trial-feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false"><path d="M7 3h7l3 3v15H7z" /><path d="M14 3v4h4" /><path d="M10 11h5" /><path d="M10 15h5" /></svg>
+                      </span>
+                      <div>
+                        <strong>Daily Brief</strong>
+                        <p>Start each day with market insights and key levels.</p>
+                      </div>
+                    </article>
+
+                    <article class="trial-feature-tile">
+                      <span class="trial-feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false"><path d="M12 4c-2.8 0-5 2.2-5 5v3.4L5.5 15h13L17 12.4V9c0-2.8-2.2-5-5-5z" /><path d="M10 18h4" /><path d="M13 2l-2 4" /></svg>
+                      </span>
+                      <div>
+                        <strong>Trade Alerts</strong>
+                        <p>Real-time ideas and updates when it matters.</p>
+                      </div>
+                    </article>
+
+                    <article class="trial-feature-tile">
+                      <span class="trial-feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="8" r="3" /><path d="M6 20c0-3.4 2.4-5.6 6-5.6s6 2.2 6 5.6" /><circle cx="5.5" cy="10" r="2.3" /><circle cx="18.5" cy="10" r="2.3" /></svg>
+                      </span>
+                      <div>
+                        <strong>Community</strong>
+                        <p>Connect, discuss, and learn with active traders.</p>
+                      </div>
+                    </article>
+
+                    <article class="trial-feature-tile">
+                      <span class="trial-feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false"><path d="M3 7h7l2 2h9v10H3z" /><path d="M3 7v12" /><path d="M7 13h10" /></svg>
+                      </span>
+                      <div>
+                        <strong>Resource Library</strong>
+                        <p>Guides, tools, and education at your fingertips.</p>
+                      </div>
+                    </article>
+                  </div>
+
                   <a
-                    href="https://whop.com/joined/ikesedge/products/ikes-trades/"
+                    href="https://www.whop.com/ikesedge"
+                    class="trial-panel-cta"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Start Ike's Trades free trial on Whop"
+                    aria-label="Start Ike's Edge free trial on Whop"
                   >
-                    Start Free Trial
+                    Start Free Trial &rarr;
                   </a>
                 </div>
               </article>
@@ -487,7 +550,7 @@
         </p>
 
         <div class="trades-center-cta">
-          <a href="index.html#results" class="button button-outline-light">
+          <a href="performance.html" class="button button-outline-light">
             View Performance
           </a>
         </div>

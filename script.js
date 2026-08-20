@@ -110,9 +110,15 @@ rotatingPanelGroups.forEach((group) => {
     });
   };
 
+  const getActiveDuration = () => {
+    const panelDuration = Number(panels[activeIndex].dataset.duration);
+
+    return panelDuration || intervalDuration;
+  };
+
   const stopRotation = () => {
     if (rotationTimer) {
-      window.clearInterval(rotationTimer);
+      window.clearTimeout(rotationTimer);
       rotationTimer = null;
     }
   };
@@ -123,9 +129,10 @@ rotatingPanelGroups.forEach((group) => {
     }
 
     stopRotation();
-    rotationTimer = window.setInterval(() => {
+    rotationTimer = window.setTimeout(() => {
       setActivePanel(activeIndex + 1);
-    }, intervalDuration);
+      startRotation();
+    }, getActiveDuration());
   };
 
   indicators.forEach((indicator, index) => {
