@@ -42,7 +42,7 @@ The current version includes:
 - a dedicated flagship Ike's Trades detail page with rotating feature panels, early pricing visibility, trading-day flow, strategy coverage, Trading Lounge context, membership pricing, FAQ content, and Whop calls to action
 - a dedicated Stock Picks detail page with rotating feature panels, early pricing visibility, organized watchlists, live portfolios, Dividend Portfolio updates, stock alerts, membership pricing, and FAQ content
 - a dedicated Performance detail page with documented Crumbs+1 July 2026 results, a reporting framework hero, methodology, portfolio and strategy tracking dashboards, strategy context, and disclosures
-- a dedicated Resources landing page that previews member tools, Daily Dealer Levels, market prep, a "Don't Trade Alone" community access panel, alerts, watchlists, portfolio updates, and performance tracking
+- a dedicated Resources landing page with a redesigned member-experience hero, anchor-linked Resource Hub tiles and hero badges, a real trade alert example preview, and organized panels for Daily Dealer Levels, market prep, community access, alerts, watchlists, portfolio updates, and performance tracking
 - dedicated Terms & Conditions, Privacy Policy, and Disclosures pages with reusable legal-page layout styles, standardized effective/last-updated callout boxes, and shared footer links
 - a July 2026 Crumbs+1 performance spotlight with documented monthly results and strategy details
 - an Ike's Trades performance spotlight CTA that routes to the dedicated Performance page
@@ -65,6 +65,7 @@ The `images/` directory currently includes branded and preview imagery used by t
 - `Daily Brief Image.png`
 - `Ike-Profile.jpeg`
 - `Ike-Oval-Version.jpeg`
+- `trade-alert-example.png`
 
 ## Local preview
 
