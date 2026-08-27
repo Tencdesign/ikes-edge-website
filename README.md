@@ -27,6 +27,7 @@ The current version includes:
 - rotating homepage, Ike's Trades, and Stock Picks hero feature panels with manual indicators, hover/focus pause handling, and accessible hidden-panel behavior
 - a homepage hero trial panel with a prominent Whop CTA, per-panel carousel timing, and a redesigned 7-day free trial card
 - an Ike's Trades hero carousel using the redesigned 7-day trial card, 5-second hero-card timing, and a refreshed SPX pin-zone visual
+- an Ike's Trades hero trial CTA that routes directly to the Ike's Trades product checkout instead of the general Whop store
 - a Stock Picks hero carousel with a green 7-day trial card, matching tile icons across carousel panels, and a Stock Picks-specific Whop CTA
 - improved hero readability with a subtle educational-use notice near the primary CTA area
 - standardized two-line heading hierarchy across the major homepage sections
