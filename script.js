@@ -32,6 +32,83 @@ if (mobileMenuButton && mainNav) {
 
 
 // ---------------------------------------------------------
+// WHOP CTA CLICK TRACKING
+// ---------------------------------------------------------
+
+const getWhopEventName = (link) => {
+  const href = (link.getAttribute("href") || "").toLowerCase();
+  const linkText = (link.textContent || "").trim().toLowerCase();
+
+  if (linkText.includes("start free trial")) {
+    return "click_start_free_trial";
+  }
+
+  if (href.includes("/products/ikes-trades/")) {
+    return "click_join_ikes_trades";
+  }
+
+  if (href.includes("/products/stockpicks/")) {
+    return "click_join_stock_picks";
+  }
+
+  if (href.includes("whop.com/ikesedge")) {
+    return "click_whop_store";
+  }
+
+  if (linkText.includes("join ike's edge")) {
+    return "click_join_ikes_edge";
+  }
+
+  return "click_whop_store";
+};
+
+const getWhopLocation = (link) => {
+  const section = link.closest("section, header, footer, main, nav, aside, article, div[id]");
+
+  if (!section) {
+    return null;
+  }
+
+  if (section.id) {
+    return section.id;
+  }
+
+  if (typeof section.className === "string") {
+    const firstClassName = section.className.trim().split(/\s+/)[0];
+
+    return firstClassName || null;
+  }
+
+  return null;
+};
+
+document.querySelectorAll('a[href*="whop.com"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    try {
+      if (!window.whop || typeof window.whop.track !== "function") {
+        return;
+      }
+
+      const properties = {
+        page: window.location.pathname,
+        link_text: (link.textContent || "").trim(),
+        href: link.href
+      };
+      const location = getWhopLocation(link);
+
+      if (location) {
+        properties.location = location;
+      }
+
+      window.whop.track(getWhopEventName(link), properties);
+    } catch (error) {
+      // Ignore tracking failures so outbound navigation is never interrupted.
+    }
+  });
+});
+
+
+// ---------------------------------------------------------
 // FAQ ACCORDION
 // ---------------------------------------------------------
 
