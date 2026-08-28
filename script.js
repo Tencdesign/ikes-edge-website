@@ -230,6 +230,93 @@ rotatingPanelGroups.forEach((group) => {
 
 
 // ---------------------------------------------------------
+// CELEBRATION PAGE SCROLL REVEALS
+// ---------------------------------------------------------
+
+const celebrationPage = document.querySelector(".member-celebration-page");
+
+if (celebrationPage && !prefersReducedMotion.matches && "IntersectionObserver" in window) {
+  celebrationPage.classList.add("celebration-motion-ready");
+
+  document.querySelectorAll(".celebration-scroll-group").forEach((group) => {
+    const staggerDelay = Number(group.dataset.celebrationStagger) || 0.12;
+
+    group.querySelectorAll(".celebration-scroll-reveal").forEach((item, index) => {
+      item.style.setProperty("--celebration-delay", `${index * staggerDelay}s`);
+    });
+  });
+
+  const celebrationObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.18,
+      rootMargin: "0px 0px -10% 0px"
+    }
+  );
+
+  document.querySelectorAll(".celebration-scroll-reveal").forEach((item) => {
+    celebrationObserver.observe(item);
+  });
+}
+
+
+// ---------------------------------------------------------
+// CELEBRATION PAGE AUDIO BUTTON
+// ---------------------------------------------------------
+
+const celebrationAudioButton = document.getElementById("celebration-audio-button");
+const celebrationAudio = document.getElementById("celebration-audio");
+
+if (celebrationPage && celebrationAudioButton && celebrationAudio) {
+  const defaultCelebrationLabel = "Start the Celebration";
+  const activeCelebrationLabel = "Playing Celebration";
+
+  const setCelebrationLabel = (label) => {
+    celebrationAudioButton.textContent = label;
+  };
+
+  celebrationAudioButton.addEventListener("click", async () => {
+    try {
+      if (!celebrationAudio.paused) {
+        celebrationAudio.currentTime = 0;
+      }
+
+      const playPromise = celebrationAudio.play();
+
+      setCelebrationLabel(activeCelebrationLabel);
+
+      if (playPromise && typeof playPromise.then === "function") {
+        await playPromise;
+      }
+    } catch (error) {
+      setCelebrationLabel(defaultCelebrationLabel);
+    }
+  });
+
+  celebrationAudio.addEventListener("ended", () => {
+    setCelebrationLabel(defaultCelebrationLabel);
+  });
+
+  celebrationAudio.addEventListener("pause", () => {
+    if (celebrationAudio.ended) {
+      return;
+    }
+
+    setCelebrationLabel(defaultCelebrationLabel);
+  });
+}
+
+
+// ---------------------------------------------------------
 // AUTOMATIC COPYRIGHT YEAR
 // ---------------------------------------------------------
 
