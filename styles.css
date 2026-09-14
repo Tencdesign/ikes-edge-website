@@ -6473,6 +6473,10 @@ p {
   gap: 20px;
 }
 
+.see-map-page .campaign-proof-grid {
+  align-items: start;
+}
+
 .see-map-page .campaign-proof-card {
   padding: 28px;
   background: #fff;
@@ -6493,6 +6497,13 @@ p {
   border: 1px solid rgba(181, 195, 214, 0.74);
   border-radius: 8px;
   box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+}
+
+.see-map-page .campaign-proof-visual img {
+  width: 100%;
+  min-height: 374px;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .see-map-page .campaign-proof-placeholder {
@@ -6530,7 +6541,7 @@ p {
 
 .see-map-page .campaign-proof-example {
   display: grid;
-  gap: 24px;
+  gap: 20px;
 }
 
 .see-map-page .campaign-proof-card ul,
@@ -6564,7 +6575,7 @@ p {
 }
 
 .see-map-page .campaign-proof-summary-inline {
-  padding-top: 2px;
+  padding-top: 0;
 }
 
 .see-map-page .campaign-proof-summary-inline strong {
@@ -6781,7 +6792,8 @@ p {
   }
 
   .see-map-page .campaign-proof-grid {
-    align-items: stretch;
+    grid-template-columns: minmax(0, 1.34fr) minmax(340px, 1fr);
+    align-items: start;
   }
 }
 
