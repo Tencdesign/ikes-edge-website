@@ -39,7 +39,10 @@ const getWhopEventName = (link) => {
   const href = (link.getAttribute("href") || "").toLowerCase();
   const linkText = (link.textContent || "").trim().toLowerCase();
 
-  if (linkText.includes("start free trial")) {
+  if (
+    linkText.includes("start free trial") ||
+    linkText.includes("start your 7-day free trial")
+  ) {
     return "click_start_free_trial";
   }
 
