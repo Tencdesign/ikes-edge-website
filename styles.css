@@ -6506,6 +6506,12 @@ p {
   border-radius: 6px;
 }
 
+.see-map-page .campaign-proof-image-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .see-map-page .campaign-proof-placeholder {
   display: grid;
   place-items: center;
