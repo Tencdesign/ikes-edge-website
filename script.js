@@ -98,9 +98,14 @@ document.querySelectorAll('a[href*="whop.com"]').forEach((link) => {
         href: link.href
       };
       const location = getWhopLocation(link);
+      const campaignCta = link.dataset.campaignCta;
 
       if (location) {
         properties.location = location;
+      }
+
+      if (campaignCta) {
+        properties.cta_position = campaignCta;
       }
 
       window.whop.track(getWhopEventName(link), properties);

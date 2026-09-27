@@ -8,6 +8,7 @@ This repository contains the static marketing site for Ike's Edge, including:
 
 - the landing page markup in `index.html`
 - the flagship Ike's Trades detail page in `ikes-trades.html`
+- the Campaign 2 Ike's Trades funnel page in `inside-ikes-trades.html`
 - the Stock Picks detail page in `stock-picks.html`
 - the Performance detail page in `performance.html`
 - the Resources landing page in `resources.html`
@@ -41,6 +42,7 @@ The current version includes:
 - refined dark and light section panels for stronger readability and visual consistency
 - a real Daily Brief product image in the Experience section instead of a mock trading graphic
 - a dedicated flagship Ike's Trades detail page with rotating feature panels, early pricing visibility, trading-day flow, strategy coverage, Trading Lounge context, membership pricing, FAQ content, and Whop calls to action
+- a Campaign 2 Inside Ike's Trades page showing the pre-market Dealer Zones workflow, live SPX trade-alert sequence, Lounge context, membership inclusions, fit guidance, Whop trial CTAs, and Campaign 2 CTA position tracking
 - a dedicated Stock Picks detail page with rotating feature panels, early pricing visibility, organized watchlists, live portfolios, Dividend Portfolio updates, stock alerts, membership pricing, and FAQ content
 - a dedicated Performance detail page with documented Crumbs+1 July 2026 results, a reporting framework hero, methodology, portfolio and strategy tracking dashboards, strategy context, and disclosures
 - a dedicated Resources landing page with a redesigned member-experience hero, anchor-linked Resource Hub tiles and hero badges, a real trade alert example preview, and organized panels for Daily Dealer Levels, market prep, community access, alerts, watchlists, portfolio updates, and performance tracking
@@ -58,6 +60,9 @@ The `images/` directory currently includes branded and preview imagery used by t
 
 - `ikes-edge-logo-header.png`
 - `ikes-edge-logo.png`
+- `dealer-zones-current.png`
+- `campaign2-trade-alert.png`
+- `campaign2-lounge-update.png`
 - `ikes-dealer-levels-preview.png`
 - `performance-dashboard-summary.png`
 - `performance-dashboard-calendars.png`
@@ -67,10 +72,18 @@ The `images/` directory currently includes branded and preview imagery used by t
 - `Ike-Profile.jpeg`
 - `Ike-Oval-Version.jpeg`
 - `trade-alert-example.png`
+- `campaign-proof-result.png`
+- `ikes-edge-store-banner.png`
+- `member-celebration-hero.png`
+- `rate-us.png`
+- `referral-50-off.png`
+- `referral-50-off-a.png`
+- `spx-levels-chart.png`
+- `50% Off.jpg`
 
 ## Local preview
 
-Because this is a simple static site, you can preview it by opening `index.html`, `ikes-trades.html`, `stock-picks.html`, `performance.html`, `resources.html`, `terms.html`, `privacy.html`, or `disclosures.html` in a browser, or by serving the folder with any lightweight static server.
+Because this is a simple static site, you can preview it by opening `index.html`, `ikes-trades.html`, `inside-ikes-trades.html`, `stock-picks.html`, `performance.html`, `resources.html`, `terms.html`, `privacy.html`, or `disclosures.html` in a browser, or by serving the folder with any lightweight static server.
 
 ## V1 baseline
 
