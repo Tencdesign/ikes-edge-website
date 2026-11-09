@@ -1,0 +1,68 @@
+:root {
+  --facebook-navy: #07111f;
+  --facebook-navy-soft: #0e1e31;
+  --facebook-gold: #e8a128;
+  --facebook-gold-light: #f8c35c;
+  --facebook-ink: #111827;
+  --facebook-muted: #5d6876;
+}
+
+.facebook-landing-page { background: #f7f9fb; color: var(--facebook-ink); }
+.facebook-container { width: min(90%, 1160px); margin: 0 auto; }
+.facebook-header { background: var(--facebook-navy); border-bottom: 1px solid rgba(255,255,255,.11); }
+.facebook-header-inner { min-height: 82px; display:flex; align-items:center; justify-content:space-between; }
+.facebook-brand img { width: 176px; height:auto; }
+.facebook-header-link { color:#dbe5f0; font-size:.82rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+.facebook-header-link span { color:var(--facebook-gold-light); margin-left:.35rem; }
+.facebook-hero { position:relative; overflow:hidden; background:linear-gradient(124deg, var(--facebook-navy) 0%, #0b1a2c 58%, #122944 100%); padding: 48px 0 78px; }
+.facebook-hero::after { content:""; position:absolute; inset:auto -12vw -25vw auto; width:52vw; height:52vw; border:1px solid rgba(232,161,40,.18); border-radius:50%; box-shadow:0 0 0 50px rgba(232,161,40,.03), 0 0 0 100px rgba(232,161,40,.025); }
+.facebook-hero-grid { position:relative; z-index:1; display:grid; grid-template-columns:minmax(0, .96fr) minmax(380px, .84fr); gap:clamp(52px, 8vw, 112px); align-items:start; }
+.facebook-eyebrow { margin-bottom:22px; color:var(--facebook-gold-light); font-size:.78rem; font-weight:800; letter-spacing:.19em; }
+.facebook-hero h1 { max-width:680px; color:#fff; font-size:clamp(2.35rem, 4vw, 3.55rem); line-height:1.02; letter-spacing:-.045em; }
+.facebook-hero h1 span { color:var(--facebook-gold-light); }
+.facebook-intro-lead { margin-top:34px; color:#fff; font-size:1.27rem; font-weight:700; }
+.facebook-intro { max-width:610px; margin-top:7px; color:#c4d0dc; font-size:1.08rem; line-height:1.75; }
+.facebook-benefits { display:grid; gap:14px; margin:28px 0 34px; padding:0; list-style:none; }
+.facebook-benefits li { display:flex; gap:13px; align-items:flex-start; color:#eef4f9; font-size:1rem; line-height:1.45; }
+.facebook-benefits li span:first-child { display:grid; place-items:center; flex:0 0 23px; width:23px; height:23px; margin-top:1px; border-radius:50%; background:var(--facebook-gold); color:var(--facebook-navy); font-size:.88rem; font-weight:900; }
+.facebook-cta-wrap { display:flex; flex-direction:column; align-items:center; width:100%; }
+.facebook-cta { display:inline-flex; align-items:center; justify-content:center; gap:18px; min-height:62px; padding:0 28px; border-radius:7px; background:var(--facebook-gold); color:#171717; box-shadow:0 15px 35px rgba(0,0,0,.22); font-size:.94rem; font-weight:900; letter-spacing:.05em; text-transform:uppercase; transition:transform .2s ease, background .2s ease, box-shadow .2s ease; }
+.facebook-cta { min-width:min(100%, 430px); }
+.facebook-cta:hover, .facebook-cta:focus-visible { background:var(--facebook-gold-light); box-shadow:0 18px 38px rgba(0,0,0,.3); transform:translateY(-2px); }
+.facebook-cta:focus-visible { outline:3px solid #fff; outline-offset:4px; }
+.facebook-cta span { font-size:1.4rem; line-height:0; }
+.facebook-cta-note { margin-top:12px; color:#aebdcb; font-size:.85rem; }
+.facebook-hero-image-wrap { position:relative; max-width:520px; justify-self:end; width:100%; }
+.facebook-badge { position:relative; z-index:2; display:inline-flex; align-items:center; gap:9px; margin:0 0 14px 8px; padding:7px 13px 7px 9px; border:1px solid rgba(232,161,40,.62); border-radius:999px; background:var(--facebook-gold); color:var(--facebook-navy); font-size:.68rem; font-weight:900; letter-spacing:.12em; text-decoration:none; text-transform:uppercase; box-shadow:0 7px 18px rgba(0,0,0,.18); cursor:pointer; transition:transform .2s ease, background .2s ease, box-shadow .2s ease; }
+.facebook-badge:hover { background:var(--facebook-gold-light); box-shadow:0 10px 22px rgba(0,0,0,.24); transform:translateY(-1px); }
+.facebook-badge:focus-visible { outline:3px solid #fff; outline-offset:4px; }
+.facebook-badge-icon { display:grid; place-items:center; width:20px; height:20px; border-radius:50%; background:var(--facebook-navy); color:var(--facebook-gold-light); font-family:Arial, sans-serif; font-size:1rem; font-weight:900; line-height:1; text-transform:lowercase; }
+.facebook-image-glow { position:absolute; inset:7% -8% -7% 8%; border:1px solid rgba(232,161,40,.55); border-radius:20px; transform:rotate(5deg); }
+.facebook-hero-image-frame { position:relative; overflow:hidden; aspect-ratio:4 / 3; border:8px solid rgba(255,255,255,.96); border-radius:16px; background:#1a2430; box-shadow:0 28px 65px rgba(0,0,0,.4); }
+.facebook-hero-image-frame img { width:100%; height:100%; object-fit:cover; object-position:center 23%; filter:saturate(.94) contrast(1.02); }
+.facebook-hero-image-frame figcaption { position:absolute; left:-9999px; }
+.facebook-image-caption { display:flex; align-items:center; gap:9px; margin-top:17px; color:#b9c8d6; font-size:.83rem; letter-spacing:.08em; text-transform:uppercase; }
+.facebook-image-caption span { width:30px; height:1px; background:var(--facebook-gold); }
+.facebook-disclaimer-section { background:#f7f9fb; padding:24px 0 28px; }
+.facebook-disclaimer { color:#768290; font-size:.76rem; line-height:1.6; text-align:center; }
+.facebook-footer { background:var(--facebook-navy); color:#bcc9d6; padding:34px 0 30px; }
+.facebook-footer-grid { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:28px; }
+.facebook-footer-brand img { width:148px; opacity:.9; }
+.facebook-footer-links { display:flex; justify-content:center; flex-wrap:wrap; gap:18px 25px; font-size:.8rem; }
+.facebook-footer-links a:hover, .facebook-footer-links a:focus-visible { color:var(--facebook-gold-light); }
+.facebook-footer-copy { color:#8090a0; font-size:.75rem; text-align:right; }
+@media (max-width: 800px) {
+  .facebook-header-inner { min-height:72px; }
+  .facebook-header-link { font-size:.7rem; }
+  .facebook-hero { padding:44px 0 65px; }
+  .facebook-hero-grid { grid-template-columns:1fr; gap:48px; }
+  .facebook-hero-image-wrap { max-width:500px; justify-self:center; order:-1; }
+  .facebook-hero h1 { font-size:clamp(2.35rem, 10vw, 3.6rem); }
+  .facebook-footer-grid { grid-template-columns:1fr; justify-items:center; gap:22px; }
+  .facebook-footer-copy { text-align:center; }
+}
+@media (max-width: 480px) {
+  .facebook-brand img { width:145px; }
+  .facebook-cta { width:100%; padding:0 17px; font-size:.78rem; }
+  .facebook-hero-image-frame { border-width:5px; }
+}
