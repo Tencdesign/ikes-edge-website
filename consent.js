@@ -128,7 +128,12 @@
 
   function loadMetaPixel() {
     const id = String(config.metaDatasetId || "").trim();
-    if (!id || window.__ikesEdgeMetaLoaded) return;
+    if (!id || window.__ikesEdgeMetaLoaded || window.__ikesEdgeMetaLoading) return;
+
+    // Set the guard before creating the script or queuing commands. This makes
+    // repeated consent application idempotent, including rapid preference
+    // changes while fbevents.js is still loading.
+    window.__ikesEdgeMetaLoading = true;
 
     window.fbq = window.fbq || function () {
       window.fbq.callMethod ? window.fbq.callMethod.apply(window.fbq, arguments) : window.fbq.queue.push(arguments);
@@ -138,14 +143,19 @@
       window.fbq.loaded = true;
       window.fbq.version = "2.0";
       window.fbq.push = window.fbq;
-      const script = document.createElement("script");
-      script.async = true;
-      script.src = "https://connect.facebook.net/en_US/fbevents.js";
-      document.head.appendChild(script);
+      let script = document.querySelector('script[data-ikes-edge-meta="true"]');
+      if (!script) {
+        script = document.createElement("script");
+        script.async = true;
+        script.dataset.ikesEdgeMeta = "true";
+        script.src = "https://connect.facebook.net/en_US/fbevents.js";
+        document.head.appendChild(script);
+      }
     }
     window.fbq("init", id);
     window.fbq("track", "PageView");
     window.__ikesEdgeMetaLoaded = true;
+    window.__ikesEdgeMetaLoading = false;
   }
 
   function loadWhopAnalytics() {
