@@ -88,6 +88,14 @@ const getWhopLocation = (link) => {
 document.querySelectorAll('a[href*="whop.com"]').forEach((link) => {
   link.addEventListener("click", () => {
     try {
+      if (
+        window.ikesEdgeConsent &&
+        typeof window.ikesEdgeConsent.canTrack === "function" &&
+        !window.ikesEdgeConsent.canTrack("analytics")
+      ) {
+        return;
+      }
+
       if (!window.whop || typeof window.whop.track !== "function") {
         return;
       }
